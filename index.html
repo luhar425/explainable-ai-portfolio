@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niroop Rahul Soma | Portfolio</title>
+<meta name="description" content="Portfolio of Niroop Rahul Soma. Featured project: Can We Trust the Answer? An infographic on explainability and validation in GPT, Claude, Gemini, and LLaMA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0f1730;--ink2:#1a2547;--paper:#f4f7fb;--glass:#fff;--line:#d5dce8;--mute:#55607a;--trace:#19c9ba;--trace-d:#00706a;--amber:#f5b544;--amber-d:#855600;--fog:#a9b4d0;--pale:#e8ecf6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 "Atkinson Hyperlegible",Verdana,sans-serif}
+h1,h2,h3,h4{font-family:"Bricolage Grotesque","Atkinson Hyperlegible",sans-serif;line-height:1.12;margin:0 0 .5em;font-weight:700;letter-spacing:-.01em}
+h1{font-size:clamp(2.4rem,6vw,4rem)}
+h2{font-size:clamp(1.7rem,3.6vw,2.5rem)}
+h3{font-size:1.3rem}
+h4{font-size:1.05rem;margin-bottom:.25em}
+p{margin:0 0 1em;max-width:68ch}
+a{color:var(--trace-d)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--amber);outline-offset:3px;border-radius:2px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:12px;top:12px;background:var(--glass);padding:8px 12px;z-index:9}
+nav{position:sticky;top:0;z-index:5;background:rgba(244,247,251,.94);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:8px 22px;align-items:center;flex-wrap:wrap;padding-top:12px;padding-bottom:12px}
+nav strong{font-family:"Bricolage Grotesque",sans-serif;margin-right:auto}
+nav a{color:var(--ink);text-decoration:none;font-size:.95rem}
+nav a:hover{text-decoration:underline}
+section{padding:72px 0}
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:end}
+.about p{font-size:1.15rem}
+.facts{margin:0;border-left:3px solid var(--trace-d);padding-left:20px}
+.facts dt{font-weight:700;margin-top:14px}
+.facts dt:first-child{margin-top:0}
+.facts dd{margin:0;color:var(--mute)}
+.ccs{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:28px}
+.ccs div{border-top:3px solid var(--ink);padding-top:14px}
+.ccs h4{font-size:1.3rem}
+.meta{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px;margin:28px 0 0}
+.meta dt{font-weight:700}
+.meta dd{margin:0;color:var(--mute)}
+.plan{border:2px dashed #b9c3d6;border-radius:10px;padding:28px 32px;margin-top:56px}
+.flag{display:inline-block;background:var(--amber);color:var(--ink);border-radius:99px;padding:1px 12px;font-size:.85rem;font-weight:700;margin-bottom:12px}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:11px 18px;border-radius:6px;text-decoration:none;font-weight:700;margin-top:8px}
+/* infographic */
+.poster{border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(15,23,48,.22);margin-top:32px}
+.pn{padding:52px 48px}
+.dark{background:var(--ink);color:var(--pale)}
+.dark.two{background:var(--ink2)}
+.dark a{color:var(--trace)}
+.dark .sub{color:var(--fog)}
+[id]{scroll-margin-top:64px}
+.map{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:10px 0 0;padding:0}
+.map a{display:block;height:100%;border:1px solid #47548a;border-radius:8px;padding:12px 14px;color:var(--pale);text-decoration:none}
+.map a:hover{border-color:var(--trace)}
+.map b{color:var(--amber);font-family:"Bricolage Grotesque",sans-serif;margin-right:6px}
+.k{display:inline-block;border:1px solid var(--amber);color:var(--amber);border-radius:99px;font-size:.8rem;line-height:1.5;padding:0 10px;margin-right:8px;vertical-align:.1em}
+.light .k{border-color:var(--amber-d);color:var(--amber-d);margin:0 0 4px}
+.mg{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}
+.lks{list-style:none;margin:0;padding:0}
+.lk{display:grid;grid-template-columns:1fr 26px 1.15fr 26px 1.15fr;gap:12px;align-items:center;padding:16px 0;border-top:1px solid var(--line);font-size:.95rem}
+.lk b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem}
+.lk i{font-style:normal;font-size:1.4rem;color:var(--trace-d);text-align:center}
+.lk small{display:none;color:var(--mute)}
+.lk.hd{border:0;color:var(--mute);padding:20px 0 6px}
+.fade{height:56px;background:linear-gradient(var(--ink),var(--paper))}
+.light{background:var(--paper)}
+.light.two{background:var(--glass)}
+.num{display:inline-block;font:700 1rem "Bricolage Grotesque",sans-serif;width:34px;height:34px;line-height:34px;text-align:center;border-radius:50%;margin-right:12px;vertical-align:.25em}
+.dark .num{background:var(--amber);color:var(--ink)}
+.light .num{background:var(--trace-d);color:#fff}
+.pn h3{font-size:1.7rem}
+.sub{font-size:1.1rem;max-width:62ch}
+.figs{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:30px}
+figure{margin:0}
+figcaption{color:var(--fog);font-size:.95rem;margin-top:8px}
+svg{display:block;width:100%;height:auto}
+.two-col{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;margin-top:26px}
+.defs{margin:0}
+.defs dt{font-weight:700;color:var(--trace)}
+.defs dd{margin:0 0 14px;color:var(--pale)}
+.why{list-style:none;margin:0;padding:0}
+.why li{padding:12px 0 12px 18px;border-left:3px solid var(--amber);margin-bottom:12px}
+.why b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.1rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 6px;padding:0;list-style:none}
+.chips li{border:1px solid #47548a;border-radius:99px;padding:4px 12px;font-size:.9rem;color:var(--fog)}
+.light .chips li{border-color:var(--line);color:var(--ink);background:var(--glass)}
+.chips li.on{background:var(--trace);border-color:var(--trace);color:var(--ink);font-weight:700}
+.obs{list-style:none;margin:28px 0 0;padding:0}
+.obs li{display:grid;grid-template-columns:210px 1fr;gap:28px;padding:20px 0;border-top:1px solid #34406f;align-items:center}
+.obs .big{font:700 2.1rem/1 "Bricolage Grotesque",sans-serif;color:var(--amber)}
+.obs .big small{display:block;font:400 .9rem/1.3 "Atkinson Hyperlegible",sans-serif;color:var(--fog);margin-top:6px}
+.obs p{margin:0}
+.flow{list-style:none;counter-reset:f;display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin:28px 0 36px;padding:0}
+.flow li{counter-increment:f;position:relative;padding:16px 16px 16px 0;border-top:4px solid var(--trace-d)}
+.flow li::before{content:counter(f);position:absolute;top:-15px;left:0;width:26px;height:26px;border-radius:50%;background:var(--trace-d);color:#fff;font:700 .85rem/26px "Bricolage Grotesque",sans-serif;text-align:center}
+.flow b{display:block;margin-top:8px;font-family:"Bricolage Grotesque",sans-serif}
+.flow span{font-size:.93rem;color:var(--mute)}
+.metrics{margin:0}
+.metrics div{border-left:3px solid var(--trace-d);padding:2px 0 2px 12px;margin-bottom:12px}
+.metrics dt{font-weight:700}
+.metrics dd{margin:0;font-size:.95rem;color:var(--mute)}
+.chart{background:var(--glass);border:1px solid var(--line);border-radius:10px;padding:18px}
+.chart figcaption{color:var(--mute)}
+.chart text{font-family:"Atkinson Hyperlegible",sans-serif;fill:var(--ink)}
+.chart .bar{fill:var(--trace-d)}
+.chart .bar:hover{fill:var(--ink)}
+.depth{list-style:none;margin:26px 0 34px;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:4px;align-items:end}
+.depth li{background:var(--ink);color:#fff;padding:12px;border-radius:6px 6px 0 0;font-size:.92rem}
+.depth li b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1rem;color:var(--trace)}
+.depth li:nth-child(1){min-height:96px;opacity:.72}.depth li:nth-child(2){min-height:122px;opacity:.79}.depth li:nth-child(3){min-height:148px;opacity:.86}.depth li:nth-child(4){min-height:174px;opacity:.93}.depth li:nth-child(5){min-height:200px}
+.scale{display:flex;justify-content:space-between;font-size:.9rem;color:var(--mute);border-top:2px solid var(--ink);padding-top:6px;margin-top:-34px;margin-bottom:34px}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:720px;font-size:.95rem}
+caption{text-align:left;font-weight:700;padding-bottom:8px}
+th,td{text-align:left;vertical-align:top;padding:12px 14px 12px 0;border-top:1px solid var(--line)}
+thead th{border-top:0;color:var(--mute);font-weight:400}
+tbody th{font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem;white-space:nowrap}
+tbody th small{display:block;font:400 .88rem "Atkinson Hyperlegible",sans-serif;color:var(--mute)}
+.eq{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1.2fr;gap:14px;align-items:stretch;margin-top:8px}
+.eq div{border:2px solid var(--ink);border-radius:8px;padding:14px}
+.eq div b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.1rem}
+.eq div span{font-size:.93rem;color:var(--mute)}
+.eq i{font:700 1.6rem "Bricolage Grotesque",sans-serif;align-self:center;font-style:normal}
+.eq .res{background:var(--ink);color:#fff}
+.eq .res span{color:var(--fog)}
+.r{font-size:.72em;vertical-align:super;text-decoration:none;font-weight:700;padding:0 1px}
+.doc{background:var(--glass);border:1px solid var(--line);border-radius:10px;padding:36px 40px;margin-top:24px;max-width:860px}
+.doc p{max-width:74ch}
+.doc h3{margin-top:1.6em}
+.doc h3:first-child{margin-top:0}
+.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:24px}
+.sk ul{margin:8px 0 0;padding-left:18px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:10px 0 0}
+.tags li{background:var(--glass);border:1px solid var(--line);border-radius:6px;padding:5px 12px;font-size:.93rem}
+.src{font-size:.93rem;padding-left:22px;columns:2;column-gap:44px}
+.src li{margin-bottom:8px;break-inside:avoid}
+footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--mute);font-size:.93rem}
+@media(max-width:860px){
+.about,.two-col,.figs,.ccs,.sk,.meta{grid-template-columns:1fr;gap:28px}
+.plan{padding:22px 18px}
+.pn{padding:38px 22px}
+.obs li{grid-template-columns:1fr;gap:8px}
+.flow{grid-template-columns:1fr;gap:22px}
+.depth{grid-template-columns:1fr;align-items:stretch}
+.depth li{min-height:0!important;border-radius:6px}
+.scale{margin-top:-28px}
+.mg,.lk{grid-template-columns:1fr}
+.map{grid-template-columns:1fr 1fr}
+.lk{gap:6px}.lk i{transform:rotate(90deg);justify-self:start;margin-left:8px}.lk small{display:block}.lk.hd{display:none}
+.eq{grid-template-columns:1fr}
+.eq i{justify-self:center}
+.src{columns:1}
+.doc{padding:24px 20px}
+section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{nav,.btn{display:none}.poster{box-shadow:none}.dark,.dark.two,.eq .res,.depth li{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Sections"><div class="wrap">
+<strong>Niroop Rahul Soma</strong>
+<a href="#about">About me</a><a href="#work">Work samples</a><a href="#infographic">Infographic</a><a href="#document">Explanatory document</a><a href="#skills">Skills</a><a href="#sources">Sources</a>
+</div></nav>
+
+<main id="main">
+<section id="about"><div class="wrap about">
+<div>
+<h1>Niroop Rahul Soma</h1>
+<p>I am building skills in AI research, model evaluation, and visual communication. My current project examines GPT, Claude, Gemini, and LLaMA, focusing on how people can assess AI outputs when the models' internal processes are difficult to understand.</p>
+<a class="btn" href="#infographic">See the infographic</a>
+</div>
+<dl class="facts">
+<dt>What I bring</dt><dd>I organize technical research into comparison tables, plain-language definitions, and diagrams that help readers understand the evidence.</dd>
+<dt>How I work</dt><dd>I identify the assignment requirements, consult original research, check numerical claims, and connect each conclusion to a source. I design visuals with readable text, clear labels, and consistent colors.</dd>
+<dt>My goal</dt><dd>Develop the ability to evaluate AI critically and communicate its capabilities, limitations, and risks clearly.</dd>
+</dl>
+</div></section>
+
+<section id="work" style="background:var(--glass);border-block:1px solid var(--line)"><div class="wrap">
+<h2>Work samples</h2>
+<h3 style="font-size:1.7rem;margin-top:28px">Can We Trust the Answer? Explainability and Validation in AI</h3>
+<p>A research project and infographic built around one central question: how can people assess an AI answer when they cannot fully inspect how it was produced?</p>
+<div class="ccs">
+<div><h4>Context</h4><p>GPT, Claude, Gemini, and LLaMA now help write code, answer medical and legal questions, and screen information, yet even their builders cannot fully say how a given answer was produced. The project covers all four model families.</p></div>
+<div><h4>Challenge</h4><p>A convincing explanation can sound reasonable without accurately describing the process that produced the answer. The evidence is also technical, changes month to month, and is spread across lab papers, evaluation research, and new regulation.</p></div>
+<div><h4>Approach</h4><p>I examined two complementary approaches: investigating internal model mechanisms, and testing observable behavior using documented evaluation methods. The result is a four-panel infographic, hand-coded in HTML, CSS, and SVG, in which every figure carries a numbered source.</p></div>
+</div>
+<dl class="meta">
+<div><dt>Visual structure</dt><dd>1. Define explainable AI and why it matters. 2. Show the obstacles: model complexity, limited access, and incomplete explanations. 3. Explain the evaluation measures: accuracy, calibration, robustness, and fairness. 4. Present research examples and their limitations.</dd></div>
+<div><dt>Deliverables</dt><dd>A visual presentation, a two-paragraph explanation, and a source list.</dd>
+<dt style="margin-top:14px">Skills demonstrated</dt><dd>Research synthesis, evidence assessment, comparative analysis, information design, and technical writing.</dd></div>
+</dl>
+<h4 style="margin-top:44px;font-size:1.3rem">Research summary</h4>
+<p><b>Why model decisions are hard to explain.</b> A language model stores more concepts than it has neurons, so single neurons respond to several unrelated ideas at once (superposition and polysemanticity).<a class="r" href="#s14">14</a> The tools that untangle this are expensive and partial: sparse autoencoders can be far larger than the model they explain,<a class="r" href="#s13">13</a> and Anthropic reports that its circuit-tracing method gives satisfying insight on roughly a quarter of the prompts tried.<a class="r" href="#s2">2</a> The reasoning a model writes out is not a reliable account either. In tests, models that used a planted hint often admitted it less than 20% of the time.<a class="r" href="#s4">4</a></p>
+<p><b>What the leading organizations are doing.</b> Anthropic's circuit-tracing research investigates internal mechanisms in Claude 3.5 Haiku, including multistep reasoning and cases where the written reasoning is unfaithful to the underlying process, and its explanations remain partial.<a class="r" href="#s1">1</a><a class="r" href="#s2">2</a> OpenAI trains deliberately sparse models whose circuits are small enough to read, and measures how well chain-of-thought can be monitored.<a class="r" href="#s5">5</a><a class="r" href="#s6">6</a> Google DeepMind publishes Gemma Scope 2, a set of sparse autoencoders and transcoders for every layer of Gemma 3, the open-weights sibling of Gemini.<a class="r" href="#s7">7</a> Meta releases LLaMA weights openly with model cards and guard models such as Llama Guard.<a class="r" href="#s8">8</a></p>
+<p><b>How validation and metrics create accountability.</b> The HELM benchmark evaluates seven dimensions: accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency. That supports using several measures, not one, when assessing reliability.<a class="r" href="#s15">15</a> Models are also attacked by red teams, and the results are published in model or system cards. Disclosure can be scored as well: Stanford's index rated Meta 60 out of 100 in 2024 and 31 in 2025. The criteria changed in 2025, and the index measures disclosure, not model accuracy.<a class="r" href="#s9">9</a><a class="r" href="#s17">17</a> Frameworks such as the NIST AI RMF and the EU AI Act turn these practices into expectations and, in Europe, legal duties.<a class="r" href="#s10">10</a><a class="r" href="#s11">11</a></p>
+
+<div class="plan">
+<span class="flag">Planned, not yet run</span>
+<h3>Next work sample: a small exploratory AI evaluation study</h3>
+<p>This study will apply the evaluation ideas from the infographic. It is a design only, so there are no results to report yet.</p>
+<dl class="meta" style="margin-top:8px">
+<div><dt>Design</dt><dd>Give each model the same 20 questions: 10 factual questions, 5 reasoning problems, and 5 deliberately unanswerable questions.</dd></div>
+<div><dt>What will be recorded</dt><dd>Model versions, dates, prompts, answers, and scoring rules.</dd></div>
+<div><dt>What will be reported</dt><dd>Correct-answer rates, and whether each model acknowledges missing information.</dd></div>
+<div><dt>Limits</dt><dd>Twenty questions make this a small exploratory study, not a benchmark.</dd></div>
+</dl>
+</div>
+</div></section>
+
+<section id="infographic"><div class="wrap">
+<h2>Infographic</h2>
+<p>Four numbered panels and a closing connection chart. Small numbers link to the sources at the bottom of the page.</p>
+
+<article class="poster" aria-label="Infographic: Can We Trust the Answer?">
+<div class="pn dark">
+<h2 style="font-size:clamp(2.2rem,5.5vw,3.6rem)">Can We Trust the Answer?</h2>
+<p class="sub">Explainability and validation in GPT, Claude, Gemini, and LLaMA. There are two complementary ways to assess an AI answer: investigate the mechanisms inside the model, and test its observable behavior.</p>
+<div class="figs">
+<figure><svg id="g1" viewBox="0 0 340 190" role="img" aria-label="A dense tangle of connections between a prompt and an answer"></svg><figcaption>What we normally see: a prompt goes in, an answer comes out, and billions of connections sit in between.</figcaption></figure>
+<figure><svg id="g2" viewBox="0 0 340 190" role="img" aria-label="The same network with one path highlighted: Dallas, then Texas, then Austin"></svg><figcaption>What interpretability reveals: asked for the capital of the state containing Dallas, Claude 3.5 Haiku activates an internal Texas concept before it answers Austin.<a class="r" href="#s2">2</a></figcaption></figure>
+</div>
+<p class="sub" style="margin:34px 0 0">Read it top to bottom. Each panel answers the question raised by the one before it.</p>
+<ol class="map">
+<li><a href="#p1"><b>1</b>What explainable AI is and why it matters</a></li>
+<li><a href="#p2"><b>2</b>What stands in the way</a></li>
+<li><a href="#p3"><b>3</b>How answers are evaluated</a></li>
+<li><a href="#p4"><b>4</b>Research examples and their limits</a></li>
+</ol>
+</div>
+
+<div class="pn dark two" id="p1">
+<h3><span class="num">1</span>Explainable AI and why it matters</h3>
+<p class="sub">Explainable AI (XAI) is the set of methods that let people understand why an AI system produced a particular output, in terms they can check.</p>
+<div class="two-col">
+<div>
+<dl class="defs">
+<dt>Explainability</dt><dd>How the system works: the mechanism behind an output.<a class="r" href="#s10">10</a></dd>
+<dt>Interpretability</dt><dd>What an output means in its context of use.<a class="r" href="#s10">10</a></dd>
+<dt>Transparency</dt><dd>What the developer discloses about data, training, testing, and limits.</dd>
+</dl>
+<p style="margin-bottom:0">NIST lists seven characteristics of trustworthy AI. Being explainable and interpretable is one of them.<a class="r" href="#s10">10</a></p>
+<ul class="chips"><li>Valid and reliable</li><li>Safe</li><li>Secure and resilient</li><li>Accountable and transparent</li><li class="on">Explainable and interpretable</li><li>Privacy-enhanced</li><li>Fair</li></ul>
+</div>
+<ul class="why">
+<li><b>Trust</b>People rely on an answer more sensibly when they can see what it rests on.</li>
+<li><b>Safety</b>Engineers can find the cause of hallucinations, bias, or deception and fix it at the root.</li>
+<li><b>Accountability</b>A decision that can be traced can be questioned, audited, and corrected.</li>
+<li><b>Compliance</b>Rules such as the EU AI Act now require disclosure and documentation.</li>
+</ul>
+</div>
+</div>
+
+<div class="pn dark" id="p2">
+<h3><span class="num">2</span>Challenges in explainability</h3>
+<p class="sub">A convincing explanation can sound reasonable without accurately describing the process that produced the answer. Five obstacles, in four groups, show why.</p>
+<ul class="obs">
+<li><div class="big">Features &gt; neurons<small>Superposition</small></div><p><span class="k">Model complexity</span>Networks pack more concepts than they have neurons, so one neuron fires for several unrelated ideas. Reading the model neuron by neuron does not work.<a class="r" href="#s14">14</a></p></li>
+<li><div class="big">About 1 in 4<small>Partial tools</small></div><p><span class="k">Incomplete explanations</span>Share of prompts on which Anthropic says circuit tracing gave satisfying insight. The simplified replacement model it relies on matches the real model's output in about half of cases.<a class="r" href="#s1">1</a><a class="r" href="#s2">2</a></p></li>
+<li><div class="big">Under 20%<small>Unfaithful reasoning</small></div><p><span class="k">Incomplete explanations</span>How often reasoning models typically admitted using a planted hint that changed their answer. Written-out reasoning can leave out what actually drove the decision.<a class="r" href="#s4">4</a></p></li>
+<li><div class="big">60 to 31<small>Shrinking disclosure</small></div><p><span class="k">Limited access</span>Meta's transparency score out of 100 in 2024 and 2025, while the industry average fell from 58 to 41. The criteria changed in 2025, and the index measures disclosure, not model accuracy.<a class="r" href="#s9">9</a><a class="r" href="#s17">17</a></p></li>
+<li><div class="big">&euro;15M or 3%<small>Staged rules</small></div><p><span class="k">Regulation</span>Maximum EU AI Act fine for general-purpose model providers. Model obligations have applied since August 2025 and transparency duties since August 2026, while high-risk rules were pushed to December 2027.<a class="r" href="#s11">11</a><a class="r" href="#s12">12</a></p></li>
+</ul>
+</div>
+<div class="fade" aria-hidden="true"></div>
+
+<div class="pn light" id="p3">
+<h3><span class="num">3</span>Validation and performance metrics</h3>
+<p class="sub">An explanation says why. Validation shows whether the model holds up, and metrics say how well, in numbers anyone can compare.</p>
+<ol class="flow" aria-label="Validation pipeline">
+<li><b>Benchmark</b><span>Standard tests of knowledge, code, and truthfulness, such as MMLU, HumanEval, and TruthfulQA.</span></li>
+<li><b>Measure broadly</b><span>Score more than accuracy. HELM evaluates seven dimensions.<a class="r" href="#s15">15</a></span></li>
+<li><b>Red team</b><span>People attack the model with jailbreaks and prompt injection to find failures before users do.</span></li>
+<li><b>Document</b><span>Publish results and limits in a model card or system card.<a class="r" href="#s8">8</a></span></li>
+<li><b>Monitor</b><span>Keep checking after release, including whether reasoning stays monitorable.<a class="r" href="#s6">6</a></span></li>
+</ol>
+<p style="margin-bottom:0"><b>The seven HELM dimensions.</b> No single number captures reliability, so several measures are used together.<a class="r" href="#s15">15</a></p>
+<ul class="chips" style="margin-bottom:36px"><li>Accuracy</li><li>Calibration</li><li>Robustness</li><li>Fairness</li><li>Bias</li><li>Toxicity</li><li>Efficiency</li></ul>
+<div class="two-col" style="margin-top:0">
+<div>
+<p style="margin-bottom:18px">Six core measures, sorted by the question each one answers.</p>
+<div class="mg">
+<div><h4>Is the model reliable?</h4>
+<dl class="metrics">
+<div><dt>Accuracy</dt><dd>How often the answer is correct.</dd></div>
+<div><dt>Robustness</dt><dd>Whether quality survives rephrased or hostile input.</dd></div>
+<div><dt>Hallucination rate</dt><dd>How often it states false things as fact.</dd></div>
+</dl></div>
+<div><h4>Can it be held to account?</h4>
+<dl class="metrics">
+<div><dt>Calibration</dt><dd>Whether stated confidence matches how often it is right.<a class="r" href="#s16">16</a></dd></div>
+<div><dt>Fairness</dt><dd>Whether results differ unfairly across groups.</dd></div>
+<div><dt>Faithfulness</dt><dd>Whether the explanation matches what the model did.<a class="r" href="#s4">4</a></dd></div>
+</dl></div>
+</div>
+</div>
+<figure class="chart">
+<svg viewBox="0 0 280 200" role="img" aria-label="Bar chart. Average transparency score out of 100: 37 in 2023, 58 in 2024, 41 in 2025.">
+<g stroke="#d5dce8"><line x1="34" y1="170" x2="270" y2="170" stroke="#0f1730"/><line x1="34" y1="95" x2="270" y2="95"/><line x1="34" y1="20" x2="270" y2="20"/></g>
+<g font-size="11" text-anchor="end" opacity=".7"><text x="28" y="174">0</text><text x="28" y="99">50</text><text x="28" y="24">100</text></g>
+<path class="bar" d="M62 170V118.5q0-4 4-4h28q4 0 4 4V170z"><title>2023: 37 out of 100</title></path>
+<path class="bar" d="M134 170V87q0-4 4-4h28q4 0 4 4V170z"><title>2024: 58 out of 100</title></path>
+<path class="bar" d="M206 170V112.5q0-4 4-4h28q4 0 4 4V170z"><title>2025: 41 out of 100</title></path>
+<g font-size="14" font-weight="700" text-anchor="middle"><text x="80" y="108">37</text><text x="152" y="77">58</text><text x="224" y="102">41</text></g>
+<g font-size="12" text-anchor="middle"><text x="80" y="188">2023</text><text x="152" y="188">2024</text><text x="224" y="188">2025</text></g>
+</svg>
+<figcaption><b>Accountability can be measured too.</b> Average score of major developers on Stanford's Foundation Model Transparency Index, out of 100. The index measures disclosure, not model accuracy, and its criteria changed in 2025.<a class="r" href="#s9">9</a><a class="r" href="#s17">17</a></figcaption>
+</figure>
+</div>
+</div>
+
+<div class="pn light two" id="p4">
+<h3><span class="num">4</span>Current solutions and techniques</h3>
+<p class="sub">Researchers test observable behavior and investigate internal mechanisms. The deeper techniques explain more, cost more, and still have limits.</p>
+<ol class="depth" aria-label="Techniques ordered from observable behavior to internal mechanisms">
+<li><b>Documentation</b>Model cards, system cards, usage guides</li>
+<li><b>Behavior tests</b>Benchmarks, red teaming, guard models</li>
+<li><b>Readable reasoning</b>Chain-of-thought monitoring</li>
+<li><b>Feature maps</b>Sparse autoencoders name the concepts inside</li>
+<li><b>Circuits</b>Attribution graphs and sparse-by-design models trace the steps</li>
+</ol>
+<div class="scale"><span>Observable behavior: what the model does</span><span>Internal mechanisms: how it does it</span></div>
+<div class="tw"><table>
+<caption>Research examples from each lab, and their limitations</caption>
+<thead><tr><th scope="col">Lab and model</th><th scope="col">Research example</th><th scope="col">What it reveals</th><th scope="col">Limitation</th></tr></thead>
+<tbody>
+<tr><th scope="row">OpenAI<small>GPT</small></th><td>Weight-sparse models and chain-of-thought monitoring<a class="r" href="#s5">5</a><a class="r" href="#s6">6</a></td><td>Small circuits that can be read end to end, and whether a reasoning trace exposes misbehavior</td><td>Sparse models are less capable and costly to train, and OpenAI itself warns that relying only on readable reasoning is fragile.<a class="r" href="#s5">5</a></td></tr>
+<tr><th scope="row">Anthropic<small>Claude</small></th><td>Circuit tracing with attribution graphs<a class="r" href="#s1">1</a></td><td>Internal mechanisms in Claude 3.5 Haiku, including multistep reasoning and cases where written reasoning is unfaithful to the underlying process<a class="r" href="#s2">2</a></td><td>Explanations remain partial: satisfying insight on about a quarter of prompts tried, one prompt at a time.<a class="r" href="#s2">2</a></td></tr>
+<tr><th scope="row">Google DeepMind<small>Gemini</small></th><td>Gemma Scope 2, a "microscope" of sparse autoencoders and transcoders<a class="r" href="#s7">7</a></td><td>Features on every layer of Gemma 3, aimed at hallucination, bias, and manipulation</td><td>Built for the open Gemma models, so it informs Gemini only indirectly.</td></tr>
+<tr><th scope="row">Meta<small>LLaMA</small></th><td>Open weights with guard models<a class="r" href="#s8">8</a></td><td>Anyone can inspect the model directly. Llama Guard screens unsafe prompts and replies</td><td>Open weights are not full disclosure: Meta's transparency score fell from 60 to 31. Guard models filter outputs without explaining them.<a class="r" href="#s17">17</a></td></tr>
+</tbody></table></div>
+</div>
+
+<div class="pn light" id="p5">
+<h3>How the pieces connect</h3>
+<p class="sub">Every challenge has a technique that responds to it and a check that shows whether the technique worked. Read each row from left to right.</p>
+<div class="lk hd" aria-hidden="true"><span>Challenge</span><span></span><span>Response</span><span></span><span>How it is checked</span></div>
+<ul class="lks">
+<li class="lk"><div><span class="k">Model complexity</span><b>Concepts are tangled across neurons</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Feature maps</b>Sparse autoencoders and transcoders separate the tangle into named concepts.<a class="r" href="#s7">7</a></div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Fidelity</b>Does the simplified model reproduce the real model's output?<a class="r" href="#s1">1</a></div></li>
+<li class="lk"><div><span class="k">Incomplete explanations</span><b>Tools explain only some prompts</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Circuits and sparse-by-design models</b>Trace the steps, or build models that are easier to trace, and open the tools to outside researchers.<a class="r" href="#s3">3</a><a class="r" href="#s5">5</a></div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Perturbation tests</b>Change a feature and see whether the output shifts as the explanation predicts.<a class="r" href="#s1">1</a></div></li>
+<li class="lk"><div><span class="k">Incomplete explanations</span><b>Written reasoning leaves things out</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Chain-of-thought monitoring</b>Watch the reasoning trace for signs of misbehavior.<a class="r" href="#s6">6</a></div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Faithfulness and monitorability</b>Tests that plant a hint and see whether the model admits using it.<a class="r" href="#s4">4</a></div></li>
+<li class="lk"><div><span class="k">Limited access</span><b>Disclosure is shrinking</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Documentation and open weights</b>Model cards, system cards, and released weights.<a class="r" href="#s8">8</a></div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Transparency scores</b>Independent indexes rate what each developer actually discloses.<a class="r" href="#s9">9</a></div></li>
+<li class="lk"><div><span class="k">Regulation</span><b>Rules demand evidence</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Benchmarks and red teaming</b>Standard tests and adversarial attacks run before and after release.</div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Reported metrics</b>Accuracy, calibration, robustness, and fairness results that auditors can compare.<a class="r" href="#s10">10</a><a class="r" href="#s15">15</a></div></li>
+</ul>
+<h4 style="margin-top:36px">How it adds up</h4>
+<div class="eq">
+<div><b>Explainability</b><span>Shows why the model answered as it did.</span></div><i aria-hidden="true">+</i>
+<div><b>Validation</b><span>Shows the model holds up under testing and attack.</span></div><i aria-hidden="true">+</i>
+<div><b>Metrics</b><span>Put reliability into numbers that can be compared and audited.</span></div><i aria-hidden="true">=</i>
+<div class="res"><b>Trust and accountability</b><span>Confidence that is earned, and a record to check when something goes wrong.</span></div>
+</div>
+</div>
+</article>
+</div></section>
+
+<section id="document" style="padding-top:0"><div class="wrap">
+<h2>Explanatory document</h2>
+<div class="doc">
+<h3>Key points</h3>
+<p>The infographic asks how people can assess an AI answer when they cannot fully inspect how it was produced, and it answers that trust has to be earned in three ways at once. Explainability shows why a model produced an output. Validation shows whether the model holds up under testing and attack. Performance metrics such as accuracy, calibration, robustness, and fairness put that reliability into numbers that can be compared and audited. For GPT, Claude, Gemini, and LLaMA, each of these is incomplete on its own: the best tracing tools work on only a fraction of prompts, written-out reasoning often omits what drove the answer, and public disclosure has been falling while regulation arrives in stages. An explanation without testing is only a story, and a test score without an explanation is a number nobody can question. A model becomes trustworthy and effective when all three are present, which is the point of the final equation.</p>
+<h3>Design rationale</h3>
+<p>Each relationship has the chart type that fits it. The validation pipeline is a numbered flow because its steps happen in order. The techniques are a stepped scale because they differ in degree, from observable behavior to internal mechanisms. The four labs share a table because the same attributes, including limitations, are compared across each. The closing chart links every challenge to its response and its check, since cause and response is the relationship that matters most. The graphic starts dark and ends light, so the reader moves from the opaque model to something that can be seen into, and the opening diagrams show the same network twice, first as a tangle and then with one real traced path picked out. Amber marks obstacles and teal marks what has been understood or measured, so color carries meaning. The body typeface, Atkinson Hyperlegible, was designed for legibility, which suits a piece about making things readable. Every figure links to a source dated 2022 to 2026, because a graphic about transparency should itself be checkable.</p>
+</div>
+
+<h2 style="margin-top:64px">Classification process and reflection</h2>
+<div class="doc">
+<h3>How I classified the content</h3>
+<p>I sorted every finding with one question: what job does this item do in helping someone trust an answer? That produced four top-level categories: why explainability matters, what stands in the way, how answers are evaluated, and what researchers are doing. A flat list inside each category hid the patterns, so I added a second level. Obstacles are grouped as model complexity, incomplete explanations, and limited access, with regulation kept as a fourth group because it is an outside pressure, not a property of the model. Evaluation measures are split by the question they answer, either whether the model is reliable or whether it can be held to account. Solutions follow the two approaches in my research, testing observable behavior and investigating internal mechanisms, and they are ordered by depth because depth predicts both how much a technique explains and how much it costs.</p>
+<p>The borderline cases needed the most thought. Chain-of-thought monitoring is both a technique and a check, so it appears in both places on purpose. Red teaming went under validation, not explainability, because it shows that a model fails without showing why. Guard models such as Llama Guard filter outputs and do not explain them, so I classed them as behavior tests. Meta's open weights count as a solution, yet Meta's falling transparency score is also my example of limited access, which is why I keep open weights and disclosure as separate ideas. I rejected sorting by company, because it would have hidden the fact that the labs are converging on the same few methods. The comparison table keeps the company view without making it the structure.</p>
+<h3>Reflection on learning</h3>
+<p>The hardest part was vocabulary. Sources use explainability, interpretability, and transparency almost interchangeably, and I could not classify anything until I had fixed a definition for each, which is why the first panel opens with definitions. The second difficulty was speed: several key sources were only months old and contradicted older summaries. The strategy that worked was the one I describe in my profile: identify the requirements, consult original research such as lab papers, the HELM paper, and the Stanford index, check each number, and tie every conclusion to a source before starting the layout. Two findings changed my thinking. I had assumed that a model showing its reasoning was explaining itself, and the evidence that this reasoning often leaves out what drove the answer showed me why an explanation has to be validated like any other output. I had also assumed that open weights meant transparency, and Meta's score showed otherwise, with the caution that the score measures disclosure and its criteria changed. The connection to the course concepts is that explainability, validation, and performance metrics are one system, with each covering a weakness in the others. My goal is to evaluate AI critically and communicate its capabilities, limitations, and risks clearly, and the planned evaluation study is my next step toward that: it will let me apply accuracy and calibration checks myself.</p>
+</div>
+</div></section>
+
+<section id="skills" style="background:var(--glass);border-block:1px solid var(--line)"><div class="wrap">
+<h2>Skills</h2>
+<div class="sk">
+<div><h3>Research and analysis</h3><ul><li>Research synthesis</li><li>Evidence assessment</li><li>Comparative analysis</li></ul></div>
+<div><h3>Communication</h3><ul><li>Information design</li><li>Technical writing</li><li>Plain-language definitions and diagrams</li></ul></div>
+<div><h3>Technical</h3><ul><li>Python</li><li>HTML, CSS, and JavaScript</li><li>SQL and data analysis</li></ul></div>
+</div>
+<h3 style="margin-top:36px">Technologies used in this project</h3>
+<ul class="tags"><li>HTML5</li><li>CSS Grid</li><li>Inline SVG</li><li>JavaScript</li><li>Responsive design</li><li>Accessible markup</li><li>GitHub Pages</li></ul>
+</div></section>
+
+<section id="sources"><div class="wrap">
+<h2>Sources</h2>
+<ol class="src">
+<li id="s1">Anthropic. <a href="https://transformer-circuits.pub/2025/attribution-graphs/methods.html">Circuit Tracing: Revealing Computational Graphs in Language Models</a>. March 2025.</li>
+<li id="s2">Anthropic. <a href="https://transformer-circuits.pub/2025/attribution-graphs/biology.html">On the Biology of a Large Language Model</a>. March 2025.</li>
+<li id="s3">Anthropic. <a href="https://www.anthropic.com/research/open-source-circuit-tracing">Open-sourcing circuit tracing tools</a>. May 2025.</li>
+<li id="s4">Anthropic. <a href="https://www.anthropic.com/research/reasoning-models-dont-say-think">Reasoning models don't always say what they think</a>. April 2025.</li>
+<li id="s5">OpenAI. <a href="https://openai.com/index/understanding-neural-networks-through-sparse-circuits/">Understanding neural networks through sparse circuits</a>. November 2025.</li>
+<li id="s6">OpenAI. <a href="https://alignment.openai.com/monitorability-evals">Open Sourcing Monitorability Evaluations</a>. April 2026.</li>
+<li id="s7">Google DeepMind. <a href="https://deepmind.google/models/gemma/gemma-scope/">Gemma Scope</a>.</li>
+<li id="s8">Meta. <a href="https://ai.meta.com/responsible-ai/">Responsible AI</a> and <a href="https://ai.meta.com/blog/meta-llama-3-meta-ai-responsibility/">Our responsible approach to Meta AI and Meta Llama 3</a>.</li>
+<li id="s9">Stanford CRFM. <a href="https://crfm.stanford.edu/fmti/December-2025">The Foundation Model Transparency Index</a>. December 2025.</li>
+<li id="s10">NIST. <a href="https://airc.nist.gov/airmf-resources/airmf/0-ai-rmf-1-0">AI Risk Management Framework (AI RMF 1.0)</a>. January 2023.</li>
+<li id="s11">WH Partners, in Chambers and Partners. <a href="https://chambers.com/articles/eu-ai-act-the-latest-compliance-checkpoint">EU AI Act: the latest compliance checkpoint</a>. 2026.</li>
+<li id="s12">FEDIL. <a href="https://fedil.lu/en/publications/ai-act-update-enforcement-begins-as-the-digital-omnibus-reshapes-the-timeline/">AI Act update: enforcement begins as the Digital Omnibus reshapes the timeline</a>. 2026.</li>
+<li id="s13">Anwar et al. <a href="https://arxiv.org/abs/2404.09932">Foundational Challenges in Assuring Alignment and Safety of Large Language Models</a>. 2024.</li>
+<li id="s14"><a href="https://arxiv.org/abs/2602.11180">Mechanistic Interpretability for Large Language Model Alignment: Progress, Challenges, and Future Directions</a>. arXiv, 2026.</li>
+<li id="s15">Liang et al. <a href="https://arxiv.org/abs/2211.09110">Holistic Evaluation of Language Models (HELM)</a>. Stanford CRFM, 2022.</li>
+<li id="s16"><a href="https://arxiv.org/abs/2609.26489">Calibration as a First-Class Criterion in LLM Evaluation</a>. arXiv, 2026.</li>
+<li id="s17">Stanford Report. <a href="https://news.stanford.edu/stories/2025/12/foundation-model-transparency-index-ai-companies-information">Transparency in AI is on the decline</a>. December 2025.</li>
+</ol>
+</div></section>
+</main>
+
+<footer><div class="wrap">Niroop Rahul Soma. Portfolio built with HTML, CSS, and SVG, and hosted on GitHub Pages.</div></footer>
+
+<script>
+(function(){
+var NS="http://www.w3.org/2000/svg",cols=[40,105,170,235,300],rows=[22,51,80,109,138,167];
+function el(s,n,a){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);s.appendChild(e);return e}
+function net(id,lit){var s=document.getElementById(id);if(!s)return;
+for(var c=0;c<4;c++)for(var i=0;i<6;i++)for(var j=0;j<6;j++)el(s,"line",{x1:cols[c],y1:rows[i],x2:cols[c+1],y2:rows[j],stroke:"#a9b4d0","stroke-width":.6,opacity:lit?.1:.3});
+for(c=0;c<5;c++)for(i=0;i<6;i++)el(s,"circle",{cx:cols[c],cy:rows[i],r:4,fill:"#a9b4d0",opacity:lit?.25:.7});
+if(!lit)return;
+var p=[[0,1,"Dallas"],[0,4,"capital"],[2,2,"Texas"],[4,3,"Austin"]],e=[[0,2],[1,2],[2,3]];
+e.forEach(function(q){el(s,"line",{x1:cols[p[q[0]][0]],y1:rows[p[q[0]][1]],x2:cols[p[q[1]][0]],y2:rows[p[q[1]][1]],stroke:"#19c9ba","stroke-width":3,"stroke-linecap":"round"})});
+p.forEach(function(n){var x=cols[n[0]],y=rows[n[1]],w=n[2].length*8.4+18;
+el(s,"rect",{x:Math.max(2,Math.min(338-w,x-w/2)),y:y-13,width:w,height:26,rx:13,fill:"#19c9ba"});
+var t=el(s,"text",{x:Math.max(2+w/2,Math.min(338-w/2,x)),y:y+5,"text-anchor":"middle","font-size":14,"font-weight":700,fill:"#0f1730","font-family":"Atkinson Hyperlegible,sans-serif"});t.textContent=n[2]})}
+net("g1",false);net("g2",true);
+})();
+</script>
+</body>
+</html>
