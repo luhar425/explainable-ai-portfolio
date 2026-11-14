@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Niroop Rahul Soma | Portfolio</title>
-<meta name="description" content="Portfolio of Niroop Rahul Soma. Featured project: Can We Trust the Answer? An infographic on explainability and validation in GPT, Claude, Gemini, and LLaMA.">
+<meta name="description" content="Portfolio of Niroop Rahul Soma, software engineer. Featured project: Can We Trust the Answer? An infographic on explainability and validation in GPT, Claude, Gemini, and LLaMA.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&display=swap" rel="stylesheet">
@@ -42,8 +42,12 @@ section{padding:72px 0}
 .meta{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px;margin:28px 0 0}
 .meta dt{font-weight:700}
 .meta dd{margin:0;color:var(--mute)}
-.plan{border:2px dashed #b9c3d6;border-radius:10px;padding:28px 32px;margin-top:56px}
-.flag{display:inline-block;background:var(--amber);color:var(--ink);border-radius:99px;padding:1px 12px;font-size:.85rem;font-weight:700;margin-bottom:12px}
+.projs{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px}
+.proj{border-top:3px solid var(--ink);padding-top:16px}
+.proj dl{margin:0}
+.proj dt{font-weight:700;margin-top:12px}
+.proj dd{margin:0;color:var(--mute)}
+.tagl{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:1px 12px;font-size:.85rem;color:var(--mute);margin-bottom:10px}
 .btn{display:inline-block;background:var(--ink);color:#fff;padding:11px 18px;border-radius:6px;text-decoration:none;font-weight:700;margin-top:8px}
 /* infographic */
 .poster{border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(15,23,48,.22);margin-top:32px}
@@ -132,16 +136,17 @@ tbody th small{display:block;font:400 .88rem "Atkinson Hyperlegible",sans-serif;
 .doc p{max-width:74ch}
 .doc h3{margin-top:1.6em}
 .doc h3:first-child{margin-top:0}
-.sk{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:24px}
-.sk ul{margin:8px 0 0;padding-left:18px}
+.skl{display:grid;grid-template-columns:230px 1fr;gap:12px 28px;margin:24px 0 0}
+.skl dt{font-weight:700}
+.skl dd{margin:0}
 .tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:10px 0 0}
 .tags li{background:var(--glass);border:1px solid var(--line);border-radius:6px;padding:5px 12px;font-size:.93rem}
 .src{font-size:.93rem;padding-left:22px;columns:2;column-gap:44px}
 .src li{margin-bottom:8px;break-inside:avoid}
 footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--mute);font-size:.93rem}
 @media(max-width:860px){
-.about,.two-col,.figs,.ccs,.sk,.meta{grid-template-columns:1fr;gap:28px}
-.plan{padding:22px 18px}
+.about,.two-col,.figs,.ccs,.skl,.meta{grid-template-columns:1fr;gap:28px}
+.projs{grid-template-columns:1fr}.skl{gap:2px}.skl dd{margin-bottom:14px}
 .pn{padding:38px 22px}
 .obs li{grid-template-columns:1fr;gap:8px}
 .flow{grid-template-columns:1fr;gap:22px}
@@ -172,28 +177,31 @@ section{padding:52px 0}
 <section id="about"><div class="wrap about">
 <div>
 <h1>Niroop Rahul Soma</h1>
-<p>I am building skills in AI research, model evaluation, and visual communication. My current project examines GPT, Claude, Gemini, and LLaMA, focusing on how people can assess AI outputs when the models' internal processes are difficult to understand.</p>
-<a class="btn" href="#infographic">See the infographic</a>
+<p>I am a software engineer with experience at Starbucks, Amazon Web Services, and Accenture. My background includes building backend services, cloud infrastructure, automation systems, and React applications. I hold a master's degree in Computer Information Sciences from the University at Buffalo, where I earned a 3.8 GPA.</p>
+<p>At Starbucks, my work includes designing an AWS Lambda orchestration engine for asynchronous workflows across 12 microservices and developing AI-assisted automation using LLM prompts and Python validation. At AWS, I developed automated configuration systems using Java and Go, provisioned infrastructure with Terraform, and strengthened service reliability through automated testing.</p>
+<a class="btn" href="#work">See my work</a>
 </div>
 <dl class="facts">
-<dt>What I bring</dt><dd>I organize technical research into comparison tables, plain-language definitions, and diagrams that help readers understand the evidence.</dd>
-<dt>How I work</dt><dd>I identify the assignment requirements, consult original research, check numerical claims, and connect each conclusion to a source. I design visuals with readable text, clear labels, and consistent colors.</dd>
-<dt>My goal</dt><dd>Develop the ability to evaluate AI critically and communicate its capabilities, limitations, and risks clearly.</dd>
+<dt>What I bring</dt><dd>Experience connecting application development with cloud infrastructure, deployment automation, and validation. My machine learning projects also include data preparation, feature engineering, cross-validation, and model comparison.</dd>
+<dt>How I work</dt><dd>I develop APIs and services, automate repeatable processes, and use testing to check critical workflows before deployment. I focus on maintainable implementations and consistent behavior across environments.</dd>
+<dt>Career focus</dt><dd>Building reliable, scalable software, with an emphasis on cloud engineering, backend systems, and practical AI integration.</dd>
 </dl>
 </div></section>
 
 <section id="work" style="background:var(--glass);border-block:1px solid var(--line)"><div class="wrap">
-<h2>Work samples</h2>
-<h3 style="font-size:1.7rem;margin-top:28px">Can We Trust the Answer? Explainability and Validation in AI</h3>
-<p>A research project and infographic built around one central question: how can people assess an AI answer when they cannot fully inspect how it was produced?</p>
+<h2>Work samples and project descriptions</h2>
+<span class="tagl" style="margin-top:20px">Current portfolio project</span>
+<h3 style="font-size:1.7rem">Can We Trust the Answer? Explainability and Validation in AI</h3>
+<p>A research project and infographic built around one question: how can people assess an AI answer when they cannot fully inspect how it was produced?</p>
 <div class="ccs">
-<div><h4>Context</h4><p>GPT, Claude, Gemini, and LLaMA now help write code, answer medical and legal questions, and screen information, yet even their builders cannot fully say how a given answer was produced. The project covers all four model families.</p></div>
-<div><h4>Challenge</h4><p>A convincing explanation can sound reasonable without accurately describing the process that produced the answer. The evidence is also technical, changes month to month, and is spread across lab papers, evaluation research, and new regulation.</p></div>
-<div><h4>Approach</h4><p>I examined two complementary approaches: investigating internal model mechanisms, and testing observable behavior using documented evaluation methods. The result is a four-panel infographic, hand-coded in HTML, CSS, and SVG, in which every figure carries a numbered source.</p></div>
+<div><h4>Objective</h4><p>Investigate how users can assess outputs from GPT, Claude, Gemini, and LLaMA, models whose builders cannot fully say how a given answer was produced.</p></div>
+<div><h4>Challenge</h4><p>Explain the difference between a persuasive explanation and evidence of reliable model behavior. A convincing explanation can sound reasonable without accurately describing the process that produced the answer.</p></div>
+<div><h4>Approach</h4><p>Examine interpretability research alongside validation methods and performance metrics. The result is a four-panel infographic, hand-coded in HTML, CSS, and SVG, in which every figure carries a numbered source.</p></div>
 </div>
 <dl class="meta">
-<div><dt>Visual structure</dt><dd>1. Define explainable AI and why it matters. 2. Show the obstacles: model complexity, limited access, and incomplete explanations. 3. Explain the evaluation measures: accuracy, calibration, robustness, and fairness. 4. Present research examples and their limitations.</dd></div>
-<div><dt>Deliverables</dt><dd>A visual presentation, a two-paragraph explanation, and a source list.</dd>
+<div><dt>Career connection</dt><dd>Builds on my experience with automated testing, machine learning evaluation, and Python validation for AI-assisted workflows.</dd>
+<dt style="margin-top:14px">Deliverables</dt><dd>A professional visual presentation, a brief explanatory document, and a referenced source list.</dd></div>
+<div><dt>Visual structure</dt><dd>1. Define explainable AI and why it matters. 2. Show the obstacles: model complexity, limited access, and incomplete explanations. 3. Explain the evaluation measures: accuracy, calibration, robustness, and fairness. 4. Present research examples and their limitations.</dd>
 <dt style="margin-top:14px">Skills demonstrated</dt><dd>Research synthesis, evidence assessment, comparative analysis, information design, and technical writing.</dd></div>
 </dl>
 <h4 style="margin-top:44px;font-size:1.3rem">Research summary</h4>
@@ -201,16 +209,28 @@ section{padding:52px 0}
 <p><b>What the leading organizations are doing.</b> Anthropic's circuit-tracing research investigates internal mechanisms in Claude 3.5 Haiku, including multistep reasoning and cases where the written reasoning is unfaithful to the underlying process, and its explanations remain partial.<a class="r" href="#s1">1</a><a class="r" href="#s2">2</a> OpenAI trains deliberately sparse models whose circuits are small enough to read, and measures how well chain-of-thought can be monitored.<a class="r" href="#s5">5</a><a class="r" href="#s6">6</a> Google DeepMind publishes Gemma Scope 2, a set of sparse autoencoders and transcoders for every layer of Gemma 3, the open-weights sibling of Gemini.<a class="r" href="#s7">7</a> Meta releases LLaMA weights openly with model cards and guard models such as Llama Guard.<a class="r" href="#s8">8</a></p>
 <p><b>How validation and metrics create accountability.</b> The HELM benchmark evaluates seven dimensions: accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency. That supports using several measures, not one, when assessing reliability.<a class="r" href="#s15">15</a> Models are also attacked by red teams, and the results are published in model or system cards. Disclosure can be scored as well: Stanford's index rated Meta 60 out of 100 in 2024 and 31 in 2025. The criteria changed in 2025, and the index measures disclosure, not model accuracy.<a class="r" href="#s9">9</a><a class="r" href="#s17">17</a> Frameworks such as the NIST AI RMF and the EU AI Act turn these practices into expectations and, in Europe, legal duties.<a class="r" href="#s10">10</a><a class="r" href="#s11">11</a></p>
 
-<div class="plan">
-<span class="flag">Planned, not yet run</span>
-<h3>Next work sample: a small exploratory AI evaluation study</h3>
-<p>This study will apply the evaluation ideas from the infographic. It is a design only, so there are no results to report yet.</p>
-<dl class="meta" style="margin-top:8px">
-<div><dt>Design</dt><dd>Give each model the same 20 questions: 10 factual questions, 5 reasoning problems, and 5 deliberately unanswerable questions.</dd></div>
-<div><dt>What will be recorded</dt><dd>Model versions, dates, prompts, answers, and scoring rules.</dd></div>
-<div><dt>What will be reported</dt><dd>Correct-answer rates, and whether each model acknowledges missing information.</dd></div>
-<div><dt>Limits</dt><dd>Twenty questions make this a small exploratory study, not a benchmark.</dd></div>
+<div class="projs">
+<div class="proj">
+<span class="tagl">College project</span>
+<h3>Support Vector Machine Classification</h3>
+<dl>
+<dt>Objective</dt><dd>Evaluate classification performance using different SVM kernels on the OJ dataset.</dd>
+<dt>Challenge</dt><dd>Select an appropriate kernel and tune model parameters.</dd>
+<dt>Approach</dt><dd>Built linear, radial, and polynomial SVM models in R and used cross-validation to optimize performance.</dd>
+<dt>Result</dt><dd>Achieved 84.4% accuracy.</dd>
+<dt>Skills demonstrated</dt><dd>R, classification, hyperparameter tuning, cross-validation, and performance evaluation.</dd>
 </dl>
+</div>
+<div class="proj">
+<span class="tagl">College project</span>
+<h3>Placement Prediction</h3>
+<dl>
+<dt>Objective</dt><dd>Predict placement outcomes using academic and experience-related factors.</dd>
+<dt>Challenge</dt><dd>Prepare the data and identify useful predictive features.</dd>
+<dt>Approach</dt><dd>Performed data cleaning, exploratory analysis, and feature engineering, then implemented SVM and Ridge Regression classifiers.</dd>
+<dt>Skills demonstrated</dt><dd>Data preparation, exploratory analysis, feature engineering, and predictive modeling.</dd>
+</dl>
+</div>
 </div>
 </div></section>
 
@@ -374,17 +394,21 @@ section{padding:52px 0}
 <p>I sorted every finding with one question: what job does this item do in helping someone trust an answer? That produced four top-level categories: why explainability matters, what stands in the way, how answers are evaluated, and what researchers are doing. A flat list inside each category hid the patterns, so I added a second level. Obstacles are grouped as model complexity, incomplete explanations, and limited access, with regulation kept as a fourth group because it is an outside pressure, not a property of the model. Evaluation measures are split by the question they answer, either whether the model is reliable or whether it can be held to account. Solutions follow the two approaches in my research, testing observable behavior and investigating internal mechanisms, and they are ordered by depth because depth predicts both how much a technique explains and how much it costs.</p>
 <p>The borderline cases needed the most thought. Chain-of-thought monitoring is both a technique and a check, so it appears in both places on purpose. Red teaming went under validation, not explainability, because it shows that a model fails without showing why. Guard models such as Llama Guard filter outputs and do not explain them, so I classed them as behavior tests. Meta's open weights count as a solution, yet Meta's falling transparency score is also my example of limited access, which is why I keep open weights and disclosure as separate ideas. I rejected sorting by company, because it would have hidden the fact that the labs are converging on the same few methods. The comparison table keeps the company view without making it the structure.</p>
 <h3>Reflection on learning</h3>
-<p>The hardest part was vocabulary. Sources use explainability, interpretability, and transparency almost interchangeably, and I could not classify anything until I had fixed a definition for each, which is why the first panel opens with definitions. The second difficulty was speed: several key sources were only months old and contradicted older summaries. The strategy that worked was the one I describe in my profile: identify the requirements, consult original research such as lab papers, the HELM paper, and the Stanford index, check each number, and tie every conclusion to a source before starting the layout. Two findings changed my thinking. I had assumed that a model showing its reasoning was explaining itself, and the evidence that this reasoning often leaves out what drove the answer showed me why an explanation has to be validated like any other output. I had also assumed that open weights meant transparency, and Meta's score showed otherwise, with the caution that the score measures disclosure and its criteria changed. The connection to the course concepts is that explainability, validation, and performance metrics are one system, with each covering a weakness in the others. My goal is to evaluate AI critically and communicate its capabilities, limitations, and risks clearly, and the planned evaluation study is my next step toward that: it will let me apply accuracy and calibration checks myself.</p>
+<p>The hardest part was vocabulary. Sources use explainability, interpretability, and transparency almost interchangeably, and I could not classify anything until I had fixed a definition for each, which is why the first panel opens with definitions. The second difficulty was speed: several key sources were only months old and contradicted older summaries. The strategy that worked was to identify the requirements, consult original research such as lab papers, the HELM paper, and the Stanford index, check each number, and tie every conclusion to a source before starting the layout. Two findings changed my thinking. I had assumed that a model showing its reasoning was explaining itself, and the evidence that this reasoning often leaves out what drove the answer showed me why an explanation has to be validated like any other output. I had also assumed that open weights meant transparency, and Meta's score showed otherwise, with the caution that the score measures disclosure and its criteria changed. The connection to the course concepts is that explainability, validation, and performance metrics are one system, with each covering a weakness in the others. The project also connects to my own work. I have used cross-validation to compare models and Python validation to check AI-assisted workflows, and this research explained why those checks matter: a persuasive explanation is not evidence of reliable behavior. I will carry that distinction into practical AI integration, where an automated test has to stand behind anything a model produces.</p>
 </div>
 </div></section>
 
 <section id="skills" style="background:var(--glass);border-block:1px solid var(--line)"><div class="wrap">
-<h2>Skills</h2>
-<div class="sk">
-<div><h3>Research and analysis</h3><ul><li>Research synthesis</li><li>Evidence assessment</li><li>Comparative analysis</li></ul></div>
-<div><h3>Communication</h3><ul><li>Information design</li><li>Technical writing</li><li>Plain-language definitions and diagrams</li></ul></div>
-<div><h3>Technical</h3><ul><li>Python</li><li>HTML, CSS, and JavaScript</li><li>SQL and data analysis</li></ul></div>
-</div>
+<h2>Technical skills</h2>
+<dl class="skl">
+<dt>Programming</dt><dd>Java, Python, Go, R, and SQL.</dd>
+<dt>Backend development</dt><dd>Spring Boot, REST APIs, Hibernate, Spring Data JPA, and microservices.</dd>
+<dt>Frontend development</dt><dd>React and integration with REST and GraphQL services.</dd>
+<dt>Cloud and deployment</dt><dd>AWS Lambda, AWS AppConfig, Docker, Kubernetes/EKS, Terraform, and Jenkins.</dd>
+<dt>Databases and messaging</dt><dd>PostgreSQL, Redis, Kafka, and JMS.</dd>
+<dt>Machine learning and AI</dt><dd>SVMs, Ridge Regression, feature engineering, cross-validation, LLM prompt refinement, and Python validation.</dd>
+<dt>Software quality</dt><dd>Automated API testing, end-to-end testing, CI/CD, and infrastructure as code.</dd>
+</dl>
 <h3 style="margin-top:36px">Technologies used in this project</h3>
 <ul class="tags"><li>HTML5</li><li>CSS Grid</li><li>Inline SVG</li><li>JavaScript</li><li>Responsive design</li><li>Accessible markup</li><li>GitHub Pages</li></ul>
 </div></section>
