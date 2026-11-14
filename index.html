@@ -61,6 +61,10 @@ section{padding:72px 0}
 .map a{display:block;height:100%;border:1px solid #47548a;border-radius:8px;padding:12px 14px;color:var(--pale);text-decoration:none}
 .map a:hover{border-color:var(--trace)}
 .map b{color:var(--amber);font-family:"Bricolage Grotesque",sans-serif;margin-right:6px}
+.map span{display:block;font-size:.9rem;color:var(--fog);margin-top:6px}
+.ins{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.ins li{border-top:3px solid var(--trace-d);padding-top:10px;font-size:.95rem}
+.ins b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem;margin-bottom:4px}
 .k{display:inline-block;border:1px solid var(--amber);color:var(--amber);border-radius:99px;font-size:.8rem;line-height:1.5;padding:0 10px;margin-right:8px;vertical-align:.1em}
 .light .k{border-color:var(--amber-d);color:var(--amber-d);margin:0 0 4px}
 .mg{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}
@@ -154,7 +158,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--mute);fo
 .depth li{min-height:0!important;border-radius:6px}
 .scale{margin-top:-28px}
 .mg,.lk{grid-template-columns:1fr}
-.map{grid-template-columns:1fr 1fr}
+.map{grid-template-columns:1fr 1fr}.ins{grid-template-columns:1fr}
 .lk{gap:6px}.lk i{transform:rotate(90deg);justify-self:start;margin-left:8px}.lk small{display:block}.lk.hd{display:none}
 .eq{grid-template-columns:1fr}
 table{min-width:0}
@@ -255,12 +259,12 @@ section{padding:52px 0}
 <figure><svg id="g1" viewBox="0 0 340 190" role="img" aria-label="A dense tangle of connections between a prompt and an answer"></svg><figcaption>What we normally see: a prompt goes in, an answer comes out, and billions of connections sit in between.</figcaption></figure>
 <figure><svg id="g2" viewBox="0 0 340 190" role="img" aria-label="The same network with one path highlighted: Dallas, then Texas, then Austin"></svg><figcaption>What interpretability reveals: asked for the capital of the state containing Dallas, Claude 3.5 Haiku activates an internal Texas concept before it answers Austin.<a class="r" href="#s2">2</a></figcaption></figure>
 </div>
-<p class="sub" style="margin:34px 0 0">Read it top to bottom. Each panel answers the question raised by the one before it.</p>
+<p class="sub" style="margin:34px 0 0">The whole argument at a glance. Each panel answers the question raised by the one before it.</p>
 <ol class="map">
-<li><a href="#p1"><b>1</b>What explainable AI is and why it matters</a></li>
-<li><a href="#p2"><b>2</b>What stands in the way</a></li>
-<li><a href="#p3"><b>3</b>How answers are evaluated</a></li>
-<li><a href="#p4"><b>4</b>Research examples and their limits</a></li>
+<li><a href="#p1"><b>1</b>What explainable AI is and why it matters<span>Methods that show why a model answered, so people can check it.</span></a></li>
+<li><a href="#p2"><b>2</b>What stands in the way<span>Tangled internals, partial tools, unfaithful reasoning, and limited access.</span></a></li>
+<li><a href="#p3"><b>3</b>How answers are evaluated<span>Benchmarks, seven HELM dimensions, red teaming, and monitoring.</span></a></li>
+<li><a href="#p4"><b>4</b>Research examples and their limits<span>Four labs, from documentation to circuits, each with a limitation.</span></a></li>
 </ol>
 </div>
 
@@ -377,6 +381,12 @@ section{padding:52px 0}
 <li class="lk"><div><span class="k">Limited access</span><b>Disclosure is shrinking</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Documentation and open weights</b>Model cards, system cards, and released weights.<a class="r" href="#s8">8</a></div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Transparency scores</b>Independent indexes rate what each developer actually discloses.<a class="r" href="#s9">9</a></div></li>
 <li class="lk"><div><span class="k">Regulation</span><b>Rules demand evidence</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Benchmarks and red teaming</b>Standard tests and adversarial attacks run before and after release.</div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Reported metrics</b>Accuracy, calibration, robustness, and fairness results that auditors can compare.<a class="r" href="#s10">10</a><a class="r" href="#s15">15</a></div></li>
 </ul>
+<h4 style="margin-top:36px">What the classification reveals</h4>
+<ul class="ins">
+<li><b>Every explanation needs a check.</b>No response in the chart stands alone. Each is paired with a test of whether it worked.</li>
+<li><b>Depth trades against coverage.</b>Documentation covers a whole model but explains little. Circuit tracing explains a lot, for about a quarter of prompts.<a class="r" href="#s2">2</a></li>
+<li><b>The labs are converging.</b>OpenAI, Anthropic, and Google DeepMind all work on sparse features or circuits. Meta's distinct contribution is open weights.</li>
+</ul>
 <h4 style="margin-top:36px">How it adds up</h4>
 <div class="eq">
 <div><b>Explainability</b><span>Shows why the model answered as it did.</span></div><i aria-hidden="true">+</i>
@@ -400,10 +410,13 @@ section{padding:52px 0}
 <h2 style="margin-top:64px">Classification process and reflection</h2>
 <div class="doc">
 <h3>How I classified the content</h3>
-<p>I sorted every finding with one question: what job does this item do in helping someone trust an answer? That produced four top-level categories: why explainability matters, what stands in the way, how answers are evaluated, and what researchers are doing. A flat list inside each category hid the patterns, so I added a second level. Obstacles are grouped as model complexity, incomplete explanations, and limited access, with regulation kept as a fourth group because it is an outside pressure, not a property of the model. Evaluation measures are split by the question they answer, either whether the model is reliable or whether it can be held to account. Solutions follow the two approaches in my research, testing observable behavior and investigating internal mechanisms, and they are ordered by depth because depth predicts both how much a technique explains and how much it costs.</p>
-<p>The borderline cases needed the most thought. Chain-of-thought monitoring is both a technique and a check, so it appears in both places on purpose. Red teaming went under validation, not explainability, because it shows that a model fails without showing why. Guard models such as Llama Guard filter outputs and do not explain them, so I classed them as behavior tests. Meta's open weights count as a solution, yet Meta's falling transparency score is also my example of limited access, which is why I keep open weights and disclosure as separate ideas. I rejected sorting by company, because it would have hidden the fact that the labs are converging on the same few methods. The comparison table keeps the company view without making it the structure.</p>
+<p>I sorted every finding with one question: what job does this item do in helping someone trust an answer? That produced four top-level categories: why explainability matters, what stands in the way, how answers are evaluated, and what researchers are doing. A flat list inside each category hid the patterns, so I added a second level. Obstacles are grouped as model complexity, incomplete explanations, and limited access, with regulation kept as a fourth group because it is an outside pressure, not a property of the model. Evaluation measures are split by the question they answer, either whether the model is reliable or whether it can be held to account. Solutions follow the two approaches in my research, testing observable behavior and investigating internal mechanisms, and they are ordered by depth because depth predicts both how much a technique explains and how much it costs. To test the scheme, I tried to place every finding in exactly one group. The items that resisted became the borderline cases below, and they showed me where my categories overlap.</p>
+<p>The borderline cases needed the most thought. Chain-of-thought monitoring is both a technique and a check, so it appears in both places on purpose. Red teaming went under validation, not explainability, because it shows that a model fails without showing why. Guard models such as Llama Guard filter outputs and do not explain them, so I classed them as behavior tests. Meta's open weights count as a solution, yet Meta's falling transparency score is also my example of limited access, which is why I keep open weights and disclosure as separate ideas. I rejected sorting by company, because it would have hidden the fact that the labs are converging on the same few methods. The comparison table keeps the company view without making it the structure. The scheme has limits. Limited access and regulation influence each other, and another analyst could reasonably file chain-of-thought monitoring only under validation. I kept my version because it puts each item where a reader deciding whether to trust an answer would look for it.</p>
 <h3>Reflection on learning</h3>
-<p>The hardest part was vocabulary. Sources use explainability, interpretability, and transparency almost interchangeably, and I could not classify anything until I had fixed a definition for each, which is why the first panel opens with definitions. The second difficulty was speed: several key sources were only months old and contradicted older summaries. The strategy that worked was to identify the requirements, consult original research such as lab papers, the HELM paper, and the Stanford index, check each number, and tie every conclusion to a source before starting the layout. Two findings changed my thinking. I had assumed that a model showing its reasoning was explaining itself, and the evidence that this reasoning often leaves out what drove the answer showed me why an explanation has to be validated like any other output. I had also assumed that open weights meant transparency, and Meta's score showed otherwise, with the caution that the score measures disclosure and its criteria changed. The connection to the course concepts is that explainability, validation, and performance metrics are one system, with each covering a weakness in the others. The project also connects to my own work. I have used cross-validation to compare models and Python validation to check AI-assisted workflows, and this research explained why those checks matter: a persuasive explanation is not evidence of reliable behavior. I will carry that distinction into practical AI integration, where an automated test has to stand behind anything a model produces.</p>
+<p><b>Challenges.</b> The hardest part was vocabulary. Sources use explainability, interpretability, and transparency almost interchangeably, and I could not classify anything until I had fixed a definition for each, which is why the first panel opens with definitions. The second difficulty was speed: several key sources were only months old and contradicted older summaries.</p>
+<p><b>Strategies.</b> I identified the requirements first, consulted original research such as lab papers, the HELM paper, and the Stanford index, checked each number, and tied every conclusion to a source before starting the layout. When two sources disagreed, I used the primary one.</p>
+<p><b>Knowledge gained.</b> Two findings changed my thinking. I had assumed that a model showing its reasoning was explaining itself, and the evidence that this reasoning often leaves out what drove the answer showed me why an explanation has to be validated like any other output. I had also assumed that open weights meant transparency, and Meta's score showed otherwise, with the caution that the score measures disclosure and its criteria changed.</p>
+<p><b>Connections and applications.</b> The connection to the course concepts is that explainability, validation, and performance metrics are one system, with each covering a weakness in the others. The project also connects to my own work. In my SVM project, I relied on cross-validation to choose the model, not on how convincing any single result looked, and in AI-assisted automation I use Python validation to check what an LLM produces. This research explained why those checks matter: a persuasive explanation is not evidence of reliable behavior. I will carry that distinction into practical AI integration, where an automated test has to stand behind anything a model produces.</p>
 </div>
 </div></section>
 
