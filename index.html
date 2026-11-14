@@ -157,6 +157,15 @@ footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--mute);fo
 .map{grid-template-columns:1fr 1fr}
 .lk{gap:6px}.lk i{transform:rotate(90deg);justify-self:start;margin-left:8px}.lk small{display:block}.lk.hd{display:none}
 .eq{grid-template-columns:1fr}
+table{min-width:0}
+thead{display:none}
+tbody tr,tbody th,td{display:block}
+tbody tr{border-top:1px solid var(--line);padding:12px 0}
+tbody th,td{border:0;padding:4px 0}
+td::before{display:block;font-size:.85rem;color:var(--mute)}
+td:nth-child(2)::before{content:"Research example"}
+td:nth-child(3)::before{content:"What it reveals"}
+td:nth-child(4)::before{content:"Limitation"}
 .eq i{justify-self:center}
 .src{columns:1}
 .doc{padding:24px 20px}
