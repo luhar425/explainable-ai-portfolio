@@ -49,6 +49,65 @@ section{padding:72px 0}
 .proj dd{margin:0;color:var(--mute)}
 .tagl{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:1px 12px;font-size:.85rem;color:var(--mute);margin-bottom:10px}
 .btn{display:inline-block;background:var(--ink);color:#fff;padding:11px 18px;border-radius:6px;text-decoration:none;font-weight:700;margin-top:8px}
+/* one-page infographic */
+.vh{font-size:1.35rem;margin:32px 0 0}
+.op{background:var(--glass);border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(15,23,48,.22);margin-top:16px}
+.op-hd{background:var(--ink);color:var(--pale);padding:30px 36px;display:flex;gap:20px 32px;justify-content:space-between;align-items:flex-end;flex-wrap:wrap}
+.op-hd h2{color:#fff;font-size:clamp(2rem,4.6vw,3rem);margin-bottom:.25em}
+.op-hd p{color:var(--fog);margin:0;max-width:58ch}
+.op-key{display:flex;gap:18px;font-size:.88rem;white-space:nowrap}
+.op-key span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:7px}
+.op-key .ka::before{background:var(--amber)}
+.op-key .kt::before{background:var(--trace)}
+.op-grid{display:grid;grid-template-columns:1fr 1fr}
+.op-q{padding:24px 30px 26px;border-bottom:1px solid var(--line)}
+.op-q:nth-child(odd){border-right:1px solid var(--line)}
+.op-q h3{font-size:1.2rem;display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.op-n{flex:none;width:28px;height:28px;border-radius:50%;background:var(--ink);color:#fff;font-size:.9rem;display:grid;place-items:center}
+.op-lead{margin:0 0 10px}
+.op-def{margin:0 0 14px;font-size:.92rem}
+.op-def div{display:grid;grid-template-columns:118px 1fr;gap:10px;padding:5px 0;border-top:1px solid var(--line)}
+.op-def dt{font-weight:700;color:var(--trace-d)}
+.op-def dd{margin:0}
+.op-why{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.op-why li{background:var(--paper);border-radius:6px;padding:8px 10px;font-size:.88rem;color:var(--mute);line-height:1.4}
+.op-why b{display:block;color:var(--ink);font-size:.95rem}
+.op-foot{font-size:.86rem;color:var(--mute);margin:12px 0 0}
+.op-ob{list-style:none;margin:0;padding:0}
+.op-ob li{display:grid;grid-template-columns:104px 1fr;gap:14px;padding:9px 0;border-top:1px solid var(--line);align-items:start}
+.op-ob li:first-child{border-top:0;padding-top:0}
+.op-stat{font:700 1.3rem/1.15 "Bricolage Grotesque",sans-serif;color:var(--amber-d)}
+.op-txt{font-size:.88rem;color:var(--mute);line-height:1.4}
+.op-txt b{display:block;color:var(--ink);font-size:.95rem}
+.op-res{display:block;color:var(--trace-d);font-weight:700;margin-top:3px}
+.op-res::before{content:"\2192\00a0"}
+.op-flow{list-style:none;margin:0 0 16px;padding:0;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.op-flow li{position:relative;display:grid;place-items:center;text-align:center;border:1.5px solid var(--trace-d);color:var(--trace-d);border-radius:6px;padding:5px 4px;font-size:.82rem;font-weight:700;line-height:1.2}
+.op-flow li+li::before{content:"\2192";position:absolute;left:-14px;top:50%;transform:translateY(-50%);color:var(--mute);font-weight:400}
+.op-sm{font-size:.9rem;margin:0 0 6px}
+.op-chips{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.op-chips li{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:2px 10px;font-size:.84rem}
+.op-two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.op-two div{border-left:3px solid var(--trace-d);padding:2px 0 2px 10px;font-size:.88rem;color:var(--mute);line-height:1.4}
+.op-two b{display:block;color:var(--ink);font-size:.95rem}
+.op-depth{display:grid;grid-template-columns:repeat(5,1fr);gap:3px;align-items:end}
+.op-depth span{background:var(--ink);color:#fff;font-size:.78rem;line-height:1.2;padding:6px;border-radius:4px 4px 0 0;hyphens:manual}
+.op-depth span:nth-child(1){height:46px;opacity:.68}.op-depth span:nth-child(2){height:54px;opacity:.76}.op-depth span:nth-child(3){height:62px;opacity:.84}.op-depth span:nth-child(4){height:70px;opacity:.92}.op-depth span:nth-child(5){height:78px}
+.op-scale{display:flex;justify-content:space-between;font-size:.8rem;color:var(--mute);border-top:2px solid var(--ink);padding-top:3px;margin-bottom:8px}
+.op-labs{margin:0;font-size:.88rem;line-height:1.4}
+.op-labs div{display:grid;grid-template-columns:122px 1fr;column-gap:12px;padding:6px 0;border-top:1px solid var(--line)}
+.op-labs div:first-child{border-top:0}
+.op-labs dt{font-weight:700;grid-row:span 2}
+.op-labs dt small{display:block;font-weight:400;color:var(--mute)}
+.op-labs dd{margin:0}
+.op-lim{color:var(--amber-d)}
+.op-lim::before{content:"Limit: ";font-weight:700}
+.op-eq{background:var(--ink);color:var(--fog);display:flex;align-items:center;justify-content:center;gap:10px 14px;padding:18px 24px;flex-wrap:wrap;text-align:center;font-size:.88rem}
+.op-eq b{display:block;color:#fff;font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem}
+.op-eq i{font:700 1.4rem "Bricolage Grotesque",sans-serif;font-style:normal;color:var(--amber)}
+.op-eq .op-out{background:var(--trace);border-radius:8px;padding:9px 16px}
+.op-eq .op-out b{color:var(--ink)}
+.op-src{font-size:.88rem;color:var(--mute);margin:12px 0 0}
 /* infographic */
 .poster{border-radius:14px;overflow:hidden;box-shadow:0 18px 50px rgba(15,23,48,.22);margin-top:32px}
 .pn{padding:52px 48px}
@@ -150,7 +209,17 @@ tbody th small{display:block;font:400 .88rem "Atkinson Hyperlegible",sans-serif;
 footer{border-top:1px solid var(--line);padding:28px 0 48px;color:var(--mute);font-size:.93rem}
 @media(max-width:860px){
 .about,.two-col,.figs,.ccs,.skl,.meta{grid-template-columns:1fr;gap:28px}
-.projs{grid-template-columns:1fr}.skl{gap:2px}.skl dd{margin-bottom:14px}
+.projs{grid-template-columns:1fr}
+.op-hd{padding:24px 20px}
+.op-grid,.op-two{grid-template-columns:1fr}
+.op-q{padding:22px 20px}
+.op-q:nth-child(odd){border-right:0}
+.op-depth span{font-size:.68rem;padding:5px 4px}
+.op-flow{grid-template-columns:1fr 1fr 1fr;row-gap:10px}.op-flow li:nth-child(4)::before{display:none}
+.op-ob li{grid-template-columns:86px 1fr;gap:10px}.op-stat{font-size:1.1rem}
+.op-labs div{grid-template-columns:1fr}
+.op-labs dt{grid-row:auto}
+.op-eq{flex-direction:column}.skl{gap:2px}.skl dd{margin-bottom:14px}
 .pn{padding:38px 22px}
 .obs li{grid-template-columns:1fr;gap:8px}
 .flow{grid-template-columns:1fr;gap:22px}
@@ -176,7 +245,7 @@ td:nth-child(4)::before{content:"Limitation"}
 section{padding:52px 0}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-@media print{nav,.btn{display:none}.poster{box-shadow:none}.dark,.dark.two,.eq .res,.depth li{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+@media print{nav,.btn{display:none}.poster,.op{box-shadow:none}.op-hd,.op-eq,.op-depth span,.dark,.dark.two,.eq .res,.depth li{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
 </style>
 </head>
 <body>
@@ -209,7 +278,7 @@ section{padding:52px 0}
 <div class="ccs">
 <div><h4>Objective</h4><p>Investigate how users can assess outputs from GPT, Claude, Gemini, and LLaMA, models whose builders cannot fully say how a given answer was produced.</p></div>
 <div><h4>Challenge</h4><p>Explain the difference between a persuasive explanation and evidence of reliable model behavior. A convincing explanation can sound reasonable without accurately describing the process that produced the answer.</p></div>
-<div><h4>Approach</h4><p>Examine interpretability research alongside validation methods and performance metrics. The result is a four-panel infographic, hand-coded in HTML, CSS, and SVG, in which every figure carries a numbered source.</p></div>
+<div><h4>Approach</h4><p>Examine interpretability research alongside validation methods and performance metrics. The result is a one-page infographic backed by a detailed four-panel version, hand-coded in HTML, CSS, and SVG, in which every figure carries a numbered source.</p></div>
 </div>
 <dl class="meta">
 <div><dt>Career connection</dt><dd>Builds on my experience with automated testing, machine learning evaluation, and Python validation for AI-assisted workflows.</dd>
@@ -218,9 +287,9 @@ section{padding:52px 0}
 <dt style="margin-top:14px">Skills demonstrated</dt><dd>Research synthesis, evidence assessment, comparative analysis, information design, and technical writing.</dd></div>
 </dl>
 <h4 style="margin-top:44px;font-size:1.3rem">Research summary</h4>
-<p><b>Why model decisions are hard to explain.</b> A language model stores more concepts than it has neurons, so single neurons respond to several unrelated ideas at once (superposition and polysemanticity).<a class="r" href="#s14">14</a> The tools that untangle this are expensive and partial: sparse autoencoders can be far larger than the model they explain,<a class="r" href="#s13">13</a> and Anthropic reports that its circuit-tracing method gives satisfying insight on roughly a quarter of the prompts tried.<a class="r" href="#s2">2</a> The reasoning a model writes out is not a reliable account either. In tests, models that used a planted hint often admitted it less than 20% of the time.<a class="r" href="#s4">4</a></p>
+<p><b>Why model decisions are hard to explain.</b> A language model stores more concepts than it has neurons, so single neurons respond to several unrelated ideas at once (superposition and polysemanticity).<a class="r" href="#s13">13</a> The tools that untangle this are partial: Anthropic reports that its circuit-tracing method gives satisfying insight on about a quarter of the prompts tried,<a class="r" href="#s2">2</a> and its simplified replacement model matches the real model's output in only about half of cases.<a class="r" href="#s1">1</a> The reasoning a model writes out is not a reliable account either. In tests, Claude 3.7 Sonnet mentioned a planted hint it had used only about 25% of the time, and DeepSeek R1 about 39%.<a class="r" href="#s4">4</a></p>
 <p><b>What the leading organizations are doing.</b> Anthropic's circuit-tracing research investigates internal mechanisms in Claude 3.5 Haiku, including multistep reasoning and cases where the written reasoning is unfaithful to the underlying process, and its explanations remain partial.<a class="r" href="#s1">1</a><a class="r" href="#s2">2</a> OpenAI trains deliberately sparse models whose circuits are small enough to read, and measures how well chain-of-thought can be monitored.<a class="r" href="#s5">5</a><a class="r" href="#s6">6</a> Google DeepMind publishes Gemma Scope 2, a set of sparse autoencoders and transcoders for every layer of Gemma 3, the open-weights sibling of Gemini.<a class="r" href="#s7">7</a> Meta releases LLaMA weights openly with model cards and guard models such as Llama Guard.<a class="r" href="#s8">8</a></p>
-<p><b>How validation and metrics create accountability.</b> The HELM benchmark evaluates seven dimensions: accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency. That supports using several measures, not one, when assessing reliability.<a class="r" href="#s15">15</a> Models are also attacked by red teams, and the results are published in model or system cards. Disclosure can be scored as well: Stanford's index rated Meta 60 out of 100 in 2024 and 31 in 2025. The criteria changed in 2025, and the index measures disclosure, not model accuracy.<a class="r" href="#s9">9</a><a class="r" href="#s17">17</a> Frameworks such as the NIST AI RMF and the EU AI Act turn these practices into expectations and, in Europe, legal duties.<a class="r" href="#s10">10</a><a class="r" href="#s11">11</a></p>
+<p><b>How validation and metrics create accountability.</b> The HELM benchmark evaluates seven dimensions: accuracy, calibration, robustness, fairness, bias, toxicity, and efficiency. That supports using several measures, not one, when assessing reliability.<a class="r" href="#s14">14</a> Models are also attacked by red teams, and the results are published in model or system cards. Disclosure can be scored as well: Stanford's index rated Meta 60 out of 100 in 2024 and 31 in 2025. The criteria changed in 2025, and the index measures disclosure, not model accuracy.<a class="r" href="#s9">9</a><a class="r" href="#s16">16</a> Frameworks such as the NIST AI RMF and the EU AI Act turn these practices into expectations and, in Europe, legal duties.<a class="r" href="#s10">10</a><a class="r" href="#s11">11</a></p>
 
 <div class="projs">
 <div class="proj">
@@ -249,8 +318,75 @@ section{padding:52px 0}
 
 <section id="infographic"><div class="wrap">
 <h2>Infographic</h2>
-<p>Four numbered panels and a closing connection chart. Small numbers link to the sources at the bottom of the page.</p>
+<p>Start with the one-page version for the whole argument at a glance. The detailed version below takes each panel in turn, with full comparisons and a connection chart.</p>
+<h3 class="vh">One-page version</h3>
+<article class="op" id="onepage" aria-label="One-page infographic: Can We Trust the Answer?">
+<div class="op-hd">
+<div>
+<h2>Can We Trust the Answer?</h2>
+<p>How can people assess an answer from GPT, Claude, Gemini, or LLaMA when they cannot fully inspect how it was produced?</p>
+</div>
+<p class="op-key"><span class="ka">Obstacle</span><span class="kt">Response or check</span></p>
+</div>
+<div class="op-grid">
+<section class="op-q">
+<h3><span class="op-n">1</span>What it is, and why it matters</h3>
+<p class="op-lead"><b>Explainable AI</b> shows why a model produced an output, in terms people can check.</p>
+<dl class="op-def">
+<div><dt>Explainability</dt><dd>The mechanism behind an output</dd></div>
+<div><dt>Interpretability</dt><dd>What the output means in context<a class="r" href="#s10">10</a></dd></div>
+<div><dt>Transparency</dt><dd>What the developer discloses</dd></div>
+</dl>
+<ul class="op-why">
+<li><b>Trust</b>See what an answer rests on</li>
+<li><b>Safety</b>Fix failures at the cause</li>
+<li><b>Accountability</b>Trace, audit, and correct</li>
+<li><b>Compliance</b>Meet disclosure duties</li>
+</ul>
+<p class="op-foot">One of seven characteristics of trustworthy AI in the NIST framework.<a class="r" href="#s10">10</a></p>
+</section>
+<section class="op-q">
+<h3><span class="op-n">2</span>What stands in the way, and the response</h3>
+<ul class="op-ob">
+<li><span class="op-stat">1 : many</span><span class="op-txt"><b>Model complexity</b>One neuron responds to many unrelated concepts<a class="r" href="#s13">13</a><span class="op-res">Feature maps</span></span></li>
+<li><span class="op-stat">1 in 4</span><span class="op-txt"><b>Partial tools</b>Prompts where circuit tracing gave satisfying insight<a class="r" href="#s2">2</a><span class="op-res">Circuits and sparse models</span></span></li>
+<li><span class="op-stat">25%</span><span class="op-txt"><b>Unfaithful reasoning</b>How often Claude 3.7 Sonnet mentioned a hint it used<a class="r" href="#s4">4</a><span class="op-res">Chain-of-thought monitoring</span></span></li>
+<li><span class="op-stat">60 &rarr; 31</span><span class="op-txt"><b>Limited access</b>Meta's transparency score, 2024 to 2025<a class="r" href="#s16">16</a><span class="op-res">Independent transparency scores</span></span></li>
+<li><span class="op-stat">&euro;15M / 3%</span><span class="op-txt"><b>Regulation</b>Maximum EU AI Act fine for model providers<a class="r" href="#s11">11</a><span class="op-res">Documented tests and metrics</span></span></li>
+</ul>
+</section>
+<section class="op-q">
+<h3><span class="op-n">3</span>How answers are evaluated</h3>
+<ol class="op-flow" aria-label="Validation steps in order"><li>Benchmark</li><li>Measure broadly</li><li>Red team</li><li>Document</li><li>Monitor</li></ol>
+<p class="op-sm">HELM scores seven dimensions, because no single number captures reliability.<a class="r" href="#s14">14</a></p>
+<ul class="op-chips"><li>Accuracy</li><li>Calibration</li><li>Robustness</li><li>Fairness</li><li>Bias</li><li>Toxicity</li><li>Efficiency</li></ul>
+<div class="op-two">
+<div><b>Is it reliable?</b>Accuracy, robustness, hallucination rate</div>
+<div><b>Can it be held to account?</b>Calibration, fairness, faithfulness</div>
+</div>
+</section>
+<section class="op-q">
+<h3><span class="op-n">4</span>What the labs are doing, and the limits</h3>
+<div class="op-depth" aria-hidden="true"><span>Documen&shy;tation</span><span>Behavior tests</span><span>Readable reasoning</span><span>Feature maps</span><span>Circuits</span></div>
+<div class="op-scale"><span>Observable behavior</span><span>Internal mechanisms</span></div>
+<dl class="op-labs">
+<div><dt>OpenAI<small>GPT</small></dt><dd>Sparse circuits and chain-of-thought monitoring</dd><dd class="op-lim">Relying only on readable reasoning is brittle<a class="r" href="#s5">5</a></dd></div>
+<div><dt>Anthropic<small>Claude</small></dt><dd>Circuit tracing with attribution graphs</dd><dd class="op-lim">Satisfying insight on about 1 in 4 prompts<a class="r" href="#s2">2</a></dd></div>
+<div><dt>Google DeepMind<small>Gemini</small></dt><dd>Gemma Scope 2 feature maps<a class="r" href="#s7">7</a></dd><dd class="op-lim">Built on open Gemma, so indirect for Gemini</dd></div>
+<div><dt>Meta<small>LLaMA</small></dt><dd>Open weights and Llama Guard<a class="r" href="#s8">8</a></dd><dd class="op-lim">Open weights are not full disclosure<a class="r" href="#s16">16</a></dd></div>
+</dl>
+</section>
+</div>
+<div class="op-eq">
+<span><b>Explainability</b>why it answered</span><i aria-hidden="true">+</i>
+<span><b>Validation</b>whether it holds up</span><i aria-hidden="true">+</i>
+<span><b>Metrics</b>how well, in comparable numbers</span><i aria-hidden="true">=</i>
+<span class="op-out"><b>Trust and accountability</b></span>
+</div>
+</article>
+<p class="op-src">Read the panels from 1 to 4. Small numbers match the sources at the bottom of the page.</p>
 
+<h3 class="vh" style="margin-top:72px">Detailed version</h3>
 <article class="poster" aria-label="Infographic: Can We Trust the Answer?">
 <div class="pn dark">
 <h2 style="font-size:clamp(2.2rem,5.5vw,3.6rem)">Can We Trust the Answer?</h2>
@@ -259,7 +395,7 @@ section{padding:52px 0}
 <figure><svg id="g1" viewBox="0 0 340 190" role="img" aria-label="A dense tangle of connections between a prompt and an answer"></svg><figcaption>What we normally see: a prompt goes in, an answer comes out, and billions of connections sit in between.</figcaption></figure>
 <figure><svg id="g2" viewBox="0 0 340 190" role="img" aria-label="The same network with one path highlighted: Dallas, then Texas, then Austin"></svg><figcaption>What interpretability reveals: asked for the capital of the state containing Dallas, Claude 3.5 Haiku activates an internal Texas concept before it answers Austin.<a class="r" href="#s2">2</a></figcaption></figure>
 </div>
-<p class="sub" style="margin:34px 0 0">The whole argument at a glance. Each panel answers the question raised by the one before it.</p>
+<p class="sub" style="margin:34px 0 0">Each panel answers the question raised by the one before it. Select one to jump to it.</p>
 <ol class="map">
 <li><a href="#p1"><b>1</b>What explainable AI is and why it matters<span>Methods that show why a model answered, so people can check it.</span></a></li>
 <li><a href="#p2"><b>2</b>What stands in the way<span>Tangled internals, partial tools, unfaithful reasoning, and limited access.</span></a></li>
@@ -294,10 +430,10 @@ section{padding:52px 0}
 <h3><span class="num">2</span>Challenges in explainability</h3>
 <p class="sub">A convincing explanation can sound reasonable without accurately describing the process that produced the answer. Five obstacles, in four groups, show why.</p>
 <ul class="obs">
-<li><div class="big">Features &gt; neurons<small>Superposition</small></div><p><span class="k">Model complexity</span>Networks pack more concepts than they have neurons, so one neuron fires for several unrelated ideas. Reading the model neuron by neuron does not work.<a class="r" href="#s14">14</a></p></li>
+<li><div class="big">Features &gt; neurons<small>Superposition</small></div><p><span class="k">Model complexity</span>Networks pack more concepts than they have neurons, so one neuron fires for several unrelated ideas. Reading the model neuron by neuron does not work.<a class="r" href="#s13">13</a></p></li>
 <li><div class="big">About 1 in 4<small>Partial tools</small></div><p><span class="k">Incomplete explanations</span>Share of prompts on which Anthropic says circuit tracing gave satisfying insight. The simplified replacement model it relies on matches the real model's output in about half of cases.<a class="r" href="#s1">1</a><a class="r" href="#s2">2</a></p></li>
-<li><div class="big">Under 20%<small>Unfaithful reasoning</small></div><p><span class="k">Incomplete explanations</span>How often reasoning models typically admitted using a planted hint that changed their answer. Written-out reasoning can leave out what actually drove the decision.<a class="r" href="#s4">4</a></p></li>
-<li><div class="big">60 to 31<small>Shrinking disclosure</small></div><p><span class="k">Limited access</span>Meta's transparency score out of 100 in 2024 and 2025, while the industry average fell from 58 to 41. The criteria changed in 2025, and the index measures disclosure, not model accuracy.<a class="r" href="#s9">9</a><a class="r" href="#s17">17</a></p></li>
+<li><div class="big">25%<small>Unfaithful reasoning</small></div><p><span class="k">Incomplete explanations</span>How often Claude 3.7 Sonnet mentioned a planted hint it had used (DeepSeek R1: 39%). Written-out reasoning can leave out what actually drove the decision.<a class="r" href="#s4">4</a></p></li>
+<li><div class="big">60 to 31<small>Shrinking disclosure</small></div><p><span class="k">Limited access</span>Meta's transparency score out of 100 in 2024 and 2025, while the industry average fell from 58 to 41. The criteria changed in 2025, and the index measures disclosure, not model accuracy.<a class="r" href="#s9">9</a><a class="r" href="#s16">16</a></p></li>
 <li><div class="big">&euro;15M or 3%<small>Staged rules</small></div><p><span class="k">Regulation</span>Maximum EU AI Act fine for general-purpose model providers. Model obligations have applied since August 2025 and transparency duties since August 2026, while high-risk rules were pushed to December 2027.<a class="r" href="#s11">11</a><a class="r" href="#s12">12</a></p></li>
 </ul>
 </div>
@@ -308,12 +444,12 @@ section{padding:52px 0}
 <p class="sub">An explanation says why. Validation shows whether the model holds up, and metrics say how well, in numbers anyone can compare.</p>
 <ol class="flow" aria-label="Validation pipeline">
 <li><b>Benchmark</b><span>Standard tests of knowledge, code, and truthfulness, such as MMLU, HumanEval, and TruthfulQA.</span></li>
-<li><b>Measure broadly</b><span>Score more than accuracy. HELM evaluates seven dimensions.<a class="r" href="#s15">15</a></span></li>
+<li><b>Measure broadly</b><span>Score more than accuracy. HELM evaluates seven dimensions.<a class="r" href="#s14">14</a></span></li>
 <li><b>Red team</b><span>People attack the model with jailbreaks and prompt injection to find failures before users do.</span></li>
 <li><b>Document</b><span>Publish results and limits in a model card or system card.<a class="r" href="#s8">8</a></span></li>
 <li><b>Monitor</b><span>Keep checking after release, including whether reasoning stays monitorable.<a class="r" href="#s6">6</a></span></li>
 </ol>
-<p style="margin-bottom:0"><b>The seven HELM dimensions.</b> No single number captures reliability, so several measures are used together.<a class="r" href="#s15">15</a></p>
+<p style="margin-bottom:0"><b>The seven HELM dimensions.</b> No single number captures reliability, so several measures are used together.<a class="r" href="#s14">14</a></p>
 <ul class="chips" style="margin-bottom:36px"><li>Accuracy</li><li>Calibration</li><li>Robustness</li><li>Fairness</li><li>Bias</li><li>Toxicity</li><li>Efficiency</li></ul>
 <div class="two-col" style="margin-top:0">
 <div>
@@ -327,7 +463,7 @@ section{padding:52px 0}
 </dl></div>
 <div><h4>Can it be held to account?</h4>
 <dl class="metrics">
-<div><dt>Calibration</dt><dd>Whether stated confidence matches how often it is right.<a class="r" href="#s16">16</a></dd></div>
+<div><dt>Calibration</dt><dd>Whether stated confidence matches how often it is right.<a class="r" href="#s15">15</a></dd></div>
 <div><dt>Fairness</dt><dd>Whether results differ unfairly across groups.</dd></div>
 <div><dt>Faithfulness</dt><dd>Whether the explanation matches what the model did.<a class="r" href="#s4">4</a></dd></div>
 </dl></div>
@@ -343,7 +479,7 @@ section{padding:52px 0}
 <g font-size="14" font-weight="700" text-anchor="middle"><text x="80" y="108">37</text><text x="152" y="77">58</text><text x="224" y="102">41</text></g>
 <g font-size="12" text-anchor="middle"><text x="80" y="188">2023</text><text x="152" y="188">2024</text><text x="224" y="188">2025</text></g>
 </svg>
-<figcaption><b>Accountability can be measured too.</b> Average score of major developers on Stanford's Foundation Model Transparency Index, out of 100. The index measures disclosure, not model accuracy, and its criteria changed in 2025.<a class="r" href="#s9">9</a><a class="r" href="#s17">17</a></figcaption>
+<figcaption><b>Accountability can be measured too.</b> Average score of major developers on Stanford's Foundation Model Transparency Index, out of 100. The index measures disclosure, not model accuracy, and its criteria changed in 2025.<a class="r" href="#s9">9</a><a class="r" href="#s16">16</a></figcaption>
 </figure>
 </div>
 </div>
@@ -363,10 +499,10 @@ section{padding:52px 0}
 <caption>Research examples from each lab, and their limitations</caption>
 <thead><tr><th scope="col">Lab and model</th><th scope="col">Research example</th><th scope="col">What it reveals</th><th scope="col">Limitation</th></tr></thead>
 <tbody>
-<tr><th scope="row">OpenAI<small>GPT</small></th><td>Weight-sparse models and chain-of-thought monitoring<a class="r" href="#s5">5</a><a class="r" href="#s6">6</a></td><td>Small circuits that can be read end to end, and whether a reasoning trace exposes misbehavior</td><td>Sparse models are less capable and costly to train, and OpenAI itself warns that relying only on readable reasoning is fragile.<a class="r" href="#s5">5</a></td></tr>
+<tr><th scope="row">OpenAI<small>GPT</small></th><td>Weight-sparse models and chain-of-thought monitoring<a class="r" href="#s5">5</a><a class="r" href="#s6">6</a></td><td>Small circuits that can be read end to end, and whether a reasoning trace exposes misbehavior</td><td>Sparse models are less capable and costly to train, and OpenAI itself warns that relying only on readable reasoning is brittle.<a class="r" href="#s5">5</a></td></tr>
 <tr><th scope="row">Anthropic<small>Claude</small></th><td>Circuit tracing with attribution graphs<a class="r" href="#s1">1</a></td><td>Internal mechanisms in Claude 3.5 Haiku, including multistep reasoning and cases where written reasoning is unfaithful to the underlying process<a class="r" href="#s2">2</a></td><td>Explanations remain partial: satisfying insight on about a quarter of prompts tried, one prompt at a time.<a class="r" href="#s2">2</a></td></tr>
 <tr><th scope="row">Google DeepMind<small>Gemini</small></th><td>Gemma Scope 2, a "microscope" of sparse autoencoders and transcoders<a class="r" href="#s7">7</a></td><td>Features on every layer of Gemma 3, aimed at hallucination, bias, and manipulation</td><td>Built for the open Gemma models, so it informs Gemini only indirectly.</td></tr>
-<tr><th scope="row">Meta<small>LLaMA</small></th><td>Open weights with guard models<a class="r" href="#s8">8</a></td><td>Anyone can inspect the model directly. Llama Guard screens unsafe prompts and replies</td><td>Open weights are not full disclosure: Meta's transparency score fell from 60 to 31. Guard models filter outputs without explaining them.<a class="r" href="#s17">17</a></td></tr>
+<tr><th scope="row">Meta<small>LLaMA</small></th><td>Open weights with guard models<a class="r" href="#s8">8</a></td><td>Anyone can inspect the model directly. Llama Guard screens unsafe prompts and replies</td><td>Open weights are not full disclosure: Meta's transparency score fell from 60 to 31. Guard models filter outputs without explaining them.<a class="r" href="#s16">16</a></td></tr>
 </tbody></table></div>
 </div>
 
@@ -379,7 +515,7 @@ section{padding:52px 0}
 <li class="lk"><div><span class="k">Incomplete explanations</span><b>Tools explain only some prompts</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Circuits and sparse-by-design models</b>Trace the steps, or build models that are easier to trace, and open the tools to outside researchers.<a class="r" href="#s3">3</a><a class="r" href="#s5">5</a></div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Perturbation tests</b>Change a feature and see whether the output shifts as the explanation predicts.<a class="r" href="#s1">1</a></div></li>
 <li class="lk"><div><span class="k">Incomplete explanations</span><b>Written reasoning leaves things out</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Chain-of-thought monitoring</b>Watch the reasoning trace for signs of misbehavior.<a class="r" href="#s6">6</a></div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Faithfulness and monitorability</b>Tests that plant a hint and see whether the model admits using it.<a class="r" href="#s4">4</a></div></li>
 <li class="lk"><div><span class="k">Limited access</span><b>Disclosure is shrinking</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Documentation and open weights</b>Model cards, system cards, and released weights.<a class="r" href="#s8">8</a></div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Transparency scores</b>Independent indexes rate what each developer actually discloses.<a class="r" href="#s9">9</a></div></li>
-<li class="lk"><div><span class="k">Regulation</span><b>Rules demand evidence</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Benchmarks and red teaming</b>Standard tests and adversarial attacks run before and after release.</div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Reported metrics</b>Accuracy, calibration, robustness, and fairness results that auditors can compare.<a class="r" href="#s10">10</a><a class="r" href="#s15">15</a></div></li>
+<li class="lk"><div><span class="k">Regulation</span><b>Rules demand evidence</b></div><i aria-hidden="true">&rarr;</i><div><small>Response</small><b>Benchmarks and red teaming</b>Standard tests and adversarial attacks run before and after release.</div><i aria-hidden="true">&rarr;</i><div><small>How it is checked</small><b>Reported metrics</b>Accuracy, calibration, robustness, and fairness results that auditors can compare.<a class="r" href="#s10">10</a><a class="r" href="#s14">14</a></div></li>
 </ul>
 <h4 style="margin-top:36px">What the classification reveals</h4>
 <ul class="ins">
@@ -404,7 +540,7 @@ section{padding:52px 0}
 <h3>Key points</h3>
 <p>The infographic asks how people can assess an AI answer when they cannot fully inspect how it was produced, and it answers that trust has to be earned in three ways at once. Explainability shows why a model produced an output. Validation shows whether the model holds up under testing and attack. Performance metrics such as accuracy, calibration, robustness, and fairness put that reliability into numbers that can be compared and audited. For GPT, Claude, Gemini, and LLaMA, each of these is incomplete on its own: the best tracing tools work on only a fraction of prompts, written-out reasoning often omits what drove the answer, and public disclosure has been falling while regulation arrives in stages. An explanation without testing is only a story, and a test score without an explanation is a number nobody can question. A model becomes trustworthy and effective when all three are present, which is the point of the final equation.</p>
 <h3>Design rationale</h3>
-<p>Each relationship has the chart type that fits it. The validation pipeline is a numbered flow because its steps happen in order. The techniques are a stepped scale because they differ in degree, from observable behavior to internal mechanisms. The four labs share a table because the same attributes, including limitations, are compared across each. The closing chart links every challenge to its response and its check, since cause and response is the relationship that matters most. The graphic starts dark and ends light, so the reader moves from the opaque model to something that can be seen into, and the opening diagrams show the same network twice, first as a tangle and then with one real traced path picked out. Amber marks obstacles and teal marks what has been understood or measured, so color carries meaning. The body typeface, Atkinson Hyperlegible, was designed for legibility, which suits a piece about making things readable. Every figure links to a source dated 2022 to 2026, because a graphic about transparency should itself be checkable.</p>
+<p>The one-page version puts the whole argument on a single screen and pairs each obstacle with its response, so the main relationship is visible before any detail. Each relationship has the chart type that fits it. The validation pipeline is a numbered flow because its steps happen in order. The techniques are a stepped scale because they differ in degree, from observable behavior to internal mechanisms. The four labs share a table because the same attributes, including limitations, are compared across each. The closing chart links every challenge to its response and its check, since cause and response is the relationship that matters most. The graphic starts dark and ends light, so the reader moves from the opaque model to something that can be seen into, and the opening diagrams show the same network twice, first as a tangle and then with one real traced path picked out. Amber marks obstacles and teal marks what has been understood or measured, so color carries meaning. The body typeface, Atkinson Hyperlegible, was designed for legibility, which suits a piece about making things readable. Every figure links to a source dated 2022 to 2026, because a graphic about transparency should itself be checkable.</p>
 </div>
 
 <h2 style="margin-top:64px">Classification process and reflection</h2>
@@ -447,14 +583,13 @@ section{padding:52px 0}
 <li id="s7">Google DeepMind. <a href="https://deepmind.google/models/gemma/gemma-scope/">Gemma Scope</a>.</li>
 <li id="s8">Meta. <a href="https://ai.meta.com/responsible-ai/">Responsible AI</a> and <a href="https://ai.meta.com/blog/meta-llama-3-meta-ai-responsibility/">Our responsible approach to Meta AI and Meta Llama 3</a>.</li>
 <li id="s9">Stanford CRFM. <a href="https://crfm.stanford.edu/fmti/December-2025">The Foundation Model Transparency Index</a>. December 2025.</li>
-<li id="s10">NIST. <a href="https://airc.nist.gov/airmf-resources/airmf/0-ai-rmf-1-0">AI Risk Management Framework (AI RMF 1.0)</a>. January 2023.</li>
+<li id="s10">NIST. <a href="https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf">Artificial Intelligence Risk Management Framework (AI RMF 1.0), NIST AI 100-1</a>, section 3. January 2023.</li>
 <li id="s11">WH Partners, in Chambers and Partners. <a href="https://chambers.com/articles/eu-ai-act-the-latest-compliance-checkpoint">EU AI Act: the latest compliance checkpoint</a>. 2026.</li>
 <li id="s12">FEDIL. <a href="https://fedil.lu/en/publications/ai-act-update-enforcement-begins-as-the-digital-omnibus-reshapes-the-timeline/">AI Act update: enforcement begins as the Digital Omnibus reshapes the timeline</a>. 2026.</li>
-<li id="s13">Anwar et al. <a href="https://arxiv.org/abs/2404.09932">Foundational Challenges in Assuring Alignment and Safety of Large Language Models</a>. 2024.</li>
-<li id="s14"><a href="https://arxiv.org/abs/2602.11180">Mechanistic Interpretability for Large Language Model Alignment: Progress, Challenges, and Future Directions</a>. arXiv, 2026.</li>
-<li id="s15">Liang et al. <a href="https://arxiv.org/abs/2211.09110">Holistic Evaluation of Language Models (HELM)</a>. Stanford CRFM, 2022.</li>
-<li id="s16"><a href="https://arxiv.org/abs/2609.26489">Calibration as a First-Class Criterion in LLM Evaluation</a>. arXiv, 2026.</li>
-<li id="s17">Stanford Report. <a href="https://news.stanford.edu/stories/2025/12/foundation-model-transparency-index-ai-companies-information">Transparency in AI is on the decline</a>. December 2025.</li>
+<li id="s13"><a href="https://arxiv.org/abs/2602.11180">Mechanistic Interpretability for Large Language Model Alignment: Progress, Challenges, and Future Directions</a>. arXiv, 2026.</li>
+<li id="s14">Liang et al. <a href="https://arxiv.org/abs/2211.09110">Holistic Evaluation of Language Models (HELM)</a>. Stanford CRFM, 2022.</li>
+<li id="s15">Sanz-Guerrero and von der Wense. <a href="https://arxiv.org/abs/2609.26489">Calibration as a First-Class Criterion in LLM Evaluation</a>. arXiv, 2026.</li>
+<li id="s16">Stanford Report. <a href="https://news.stanford.edu/stories/2025/12/foundation-model-transparency-index-ai-companies-information">Transparency in AI is on the decline</a>. December 2025.</li>
 </ol>
 </div></section>
 </main>
